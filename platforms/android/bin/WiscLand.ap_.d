@@ -1,0 +1,24 @@
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/bin/WiscLand.ap_ \
+ : /Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/res/drawable/icon.png \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/res/drawable-hdpi/icon.png \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/res/drawable-ldpi/icon.png \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/res/drawable-mdpi/icon.png \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/res/drawable-xhdpi/icon.png \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/res/values/strings.xml \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/res/xml/config.xml \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/bin/res/drawable/icon.png \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/bin/res/drawable-hdpi/icon.png \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/bin/res/drawable-ldpi/icon.png \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/bin/res/drawable-mdpi/icon.png \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/bin/res/drawable-xhdpi/icon.png \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/cordova.js \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/cordova_plugins.js \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/css \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/img \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/index.html \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/js \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/css/index.css \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/img/logo.png \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/js/index.js \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/bin/AndroidManifest.xml \

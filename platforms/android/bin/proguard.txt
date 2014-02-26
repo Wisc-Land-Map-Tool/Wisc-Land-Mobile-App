@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:6
+-keep class com.example.Wisc_Land_Mobile_App.WiscLand { <init>(...); }
+
