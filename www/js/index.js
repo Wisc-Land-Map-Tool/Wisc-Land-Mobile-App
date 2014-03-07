@@ -5,9 +5,9 @@ function init() {
 }
 
 $("#loginBtn").click(function (e) {
-    alert("Test that user has clicked login button")
+    // alert("Test that user has clicked login button")
     var u = $("#email").val();
     var p = $("#password").val();
-    alert("UserName = " + u);
-    alert("Password = " + p);
+    // alert("UserName = " + u);
+    // alert("Password = " + p);
 });

@@ -2,3 +2,112 @@
 2014-03-05 16:41:53.089 WiscLand[3478:80b] Unlimited access to network resources
 2014-03-05 16:41:56.617 WiscLand[3478:80b] Resetting plugins due to page load.
 2014-03-05 16:42:02.420 WiscLand[3478:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 18:36:07.596 WiscLand[6272:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 18:36:07.803 WiscLand[6272:80b] Unlimited access to network resources
+2014-03-06 18:36:10.659 WiscLand[6272:80b] Resetting plugins due to page load.
+2014-03-06 18:36:12.960 WiscLand[6272:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 18:38:37.210 WiscLand[6593:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 18:38:37.220 WiscLand[6593:80b] Unlimited access to network resources
+2014-03-06 18:38:37.456 WiscLand[6593:80b] Resetting plugins due to page load.
+2014-03-06 18:38:37.996 WiscLand[6593:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:06:11.945 WiscLand[7165:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:06:11.983 WiscLand[7165:80b] Unlimited access to network resources
+2014-03-06 19:06:12.138 WiscLand[7165:80b] Resetting plugins due to page load.
+2014-03-06 19:06:17.852 WiscLand[7165:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:08:10.943 WiscLand[7491:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:08:10.974 WiscLand[7491:80b] Unlimited access to network resources
+2014-03-06 19:08:11.166 WiscLand[7491:80b] Resetting plugins due to page load.
+2014-03-06 19:08:13.009 WiscLand[7491:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFillColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetStrokeColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSaveGState: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFlatness: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextAddPath: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextDrawPath: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextRestoreGState: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSaveGState: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFlatness: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextAddPath: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextDrawPath: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextRestoreGState: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFillColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetStrokeColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFillColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetStrokeColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextGetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextFillRects: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFillColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetStrokeColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextGetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextFillRects: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFillColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetStrokeColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextGetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextFillRects: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
+2014-03-06 19:23:17.515 WiscLand[8206:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:23:17.522 WiscLand[8206:80b] Unlimited access to network resources
+2014-03-06 19:23:17.745 WiscLand[8206:80b] Resetting plugins due to page load.
+2014-03-06 19:23:18.269 WiscLand[8206:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:24:31.324 WiscLand[8528:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:24:31.335 WiscLand[8528:80b] Unlimited access to network resources
+2014-03-06 19:24:31.604 WiscLand[8528:80b] Resetting plugins due to page load.
+2014-03-06 19:24:32.024 WiscLand[8528:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:41:06.568 WiscLand[8883:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:41:06.577 WiscLand[8883:80b] Unlimited access to network resources
+2014-03-06 19:41:06.712 WiscLand[8883:80b] Resetting plugins due to page load.
+2014-03-06 19:41:07.444 WiscLand[8883:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:41:57.127 WiscLand[9202:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:41:57.138 WiscLand[9202:80b] Unlimited access to network resources
+2014-03-06 19:41:57.461 WiscLand[9202:80b] Resetting plugins due to page load.
+2014-03-06 19:41:57.993 WiscLand[9202:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:42:04.277 WiscLand[9202:80b] CDVWebViewDelegate: Navigation started when state=1
+2014-03-06 19:42:04.278 WiscLand[9202:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-03-06 19:46:21.293 WiscLand[9537:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:46:21.299 WiscLand[9537:80b] Unlimited access to network resources
+2014-03-06 19:46:21.555 WiscLand[9537:80b] Resetting plugins due to page load.
+2014-03-06 19:46:22.138 WiscLand[9537:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:46:36.151 WiscLand[9537:80b] CDVWebViewDelegate: Navigation started when state=1
+2014-03-06 19:46:36.151 WiscLand[9537:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-03-06 19:49:08.315 WiscLand[9537:80b] Received memory warning.
+2014-03-06 19:49:44.788 WiscLand[9906:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:49:44.796 WiscLand[9906:80b] Unlimited access to network resources
+2014-03-06 19:49:45.024 WiscLand[9906:80b] Resetting plugins due to page load.
+2014-03-06 19:49:45.625 WiscLand[9906:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:51:38.401 WiscLand[10232:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:51:38.412 WiscLand[10232:80b] Unlimited access to network resources
+2014-03-06 19:51:38.594 WiscLand[10232:80b] Resetting plugins due to page load.
+2014-03-06 19:51:39.148 WiscLand[10232:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:52:02.691 WiscLand[10548:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:52:02.701 WiscLand[10548:80b] Unlimited access to network resources
+2014-03-06 19:52:02.911 WiscLand[10548:80b] Resetting plugins due to page load.
+2014-03-06 19:52:03.499 WiscLand[10548:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:53:12.306 WiscLand[10870:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:53:12.313 WiscLand[10870:80b] Unlimited access to network resources
+2014-03-06 19:53:12.468 WiscLand[10870:80b] Resetting plugins due to page load.
+2014-03-06 19:53:13.036 WiscLand[10870:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:54:33.768 WiscLand[11190:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:54:33.778 WiscLand[11190:80b] Unlimited access to network resources
+2014-03-06 19:54:33.961 WiscLand[11190:80b] Resetting plugins due to page load.
+2014-03-06 19:54:34.579 WiscLand[11190:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:54:38.618 WiscLand[11190:80b] CDVWebViewDelegate: Navigation started when state=1
+2014-03-06 19:54:38.619 WiscLand[11190:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-03-06 19:57:13.179 WiscLand[11525:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:57:13.190 WiscLand[11525:80b] Unlimited access to network resources
+2014-03-06 19:57:13.376 WiscLand[11525:80b] Resetting plugins due to page load.
+2014-03-06 19:57:14.237 WiscLand[11525:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:58:04.483 WiscLand[11842:80b] Multi-tasking -> Device: YES, App: YES
+2014-03-06 19:58:04.496 WiscLand[11842:80b] Unlimited access to network resources
+2014-03-06 19:58:04.731 WiscLand[11842:80b] Resetting plugins due to page load.
+2014-03-06 19:58:05.383 WiscLand[11842:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
+2014-03-06 19:58:30.461 WiscLand[11842:80b] CDVWebViewDelegate: Navigation started when state=1
+2014-03-06 19:58:30.462 WiscLand[11842:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-03-06 20:00:40.027 WiscLand[11842:80b] CDVWebViewDelegate: Navigation started when state=1
+2014-03-06 20:00:40.028 WiscLand[11842:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-03-06 20:01:07.723 WiscLand[11842:80b] CDVWebViewDelegate: Navigation started when state=1
+2014-03-06 20:01:07.723 WiscLand[11842:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
