@@ -11,6 +11,7 @@
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+
 </head>
 
 <body onload="init()"> 
@@ -36,10 +37,10 @@
 
         
         </form>
-        <ul data-role="listview" data-divider-theme="a" data-inset="false">
+<!--         <ul data-role="listview" data-divider-theme="a" data-inset="false">
             <li data-theme="a"><a href="tasks.html" data-transition="slide">Login</a></li>
-        </ul>
-        <!-- <button data-role="button" id="loginBtn" data-theme="a">Login</button> -->
+        </ul> -->
+        <button data-role="button" id="loginBtn" data-theme="a">Login</button>
     </div>
 
     <div data-theme="a" data-role="footer">
@@ -48,6 +49,46 @@
                 </h3>
             </div>
 </div>
-<script language="javascript" type="text/javascript" src="js/index.js"></script> 
+<!-- <script language="javascript" type="text/javascript" src="js/index.js"></script> --> 
+<script>
+
+function init() {
+
+ document.addEventListener("deviceready", deviceReady, true);
+ delete init;
+}
+
+$("#loginBtn").click(function (e) {
+
+
+
+        var u = $("#email").val();
+        var p = $("#password").val();
+        alert(u);
+        alert(p);
+
+        $.ajax({
+        url: "http://localhost:3000/users/sign_in.json",
+        type: "POST",
+      
+        data: JSON.stringify({user: {email: u, password: p}}),
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        success: function(data){
+            console.log(data.error);
+            alert("Success Alert"); 
+             
+        },
+        
+        error: function(error) {
+            alert(error.responseText)
+            alert("error alert");
+        }
+        
+        });
+
+});
+</script>
+
 </body>
 </html>

@@ -11,40 +11,84 @@
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+
 </head>
 
 <body onload="init()"> 
     
-<div id="loginPage" data-role="page" data-theme="b">
+<div id="loginPage" data-role="page" data-theme="a">
 
-    <div data-theme="b" data-role="header" id="header">
+    <div data-theme="a" data-role="header" id="header">
                 <strong id="WINGS">Wisconsin Mapping Tool</strong>
      </div>
 
-    <div data-role="content" data-theme="b">    
+    <div data-role="content" data-theme="a">    
 
-        <form id="loginForm" data-theme="b">
-        <div data-role="fieldcontain" class="ui-hide-label" data-theme="b">
+        <form id="loginForm" data-theme="a">
+        <div data-role="fieldcontain" class="ui-hide-label" data-theme="a">
             <label for="email">Email:</label>
             <input type="text" name="email" id="email" value="" placeholder="Email" />
         </div>
 
-        <div data-role="fieldcontain" class="ui-hide-label" data-theme="b"> 
+        <div data-role="fieldcontain" class="ui-hide-label" data-theme="a"> 
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" value="" placeholder="Password" />
         </div>
 
         
         </form>
-        <button data-role="button" id="loginBtn" data-theme="b">Login</button>
+<!--         <ul data-role="listview" data-divider-theme="a" data-inset="false">
+            <li data-theme="a"><a href="tasks.html" data-transition="slide">Login</a></li>
+        </ul> -->
+        <button data-role="button" id="loginBtn" data-theme="a">Login</button>
     </div>
 
-    <div data-theme="b" data-role="footer">
+    <div data-theme="a" data-role="footer">
                 <h3>
                     UW-Madison
                 </h3>
             </div>
 </div>
-<script language="javascript" type="text/javascript" src="js/index.js"></script> 
+<!-- <script language="javascript" type="text/javascript" src="js/index.js"></script> --> 
+<script>
+
+function init() {
+
+ document.addEventListener("deviceready", deviceReady, true);
+ delete init;
+}
+
+$("#loginBtn").click(function (e) {
+
+
+
+        var u = $("#email").val();
+        var p = $("#password").val();
+        alert(u);
+        alert(p);
+
+        $.ajax({
+        url: "http://localhost:3000/users/sign_in",
+        type: "POST",
+      
+        data: JSON.stringify({user: {email: u, password: p}}),
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        success: function(data){
+            alert(data);
+            alert("Success"); 
+             
+        },
+        
+        error: function(error) {
+            alert(error.responseText)
+            alert("error");
+        }
+        
+        });
+
+});
+</script>
+
 </body>
 </html>
