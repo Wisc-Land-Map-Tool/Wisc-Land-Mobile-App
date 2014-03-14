@@ -1,275 +1,32 @@
-2014-03-05 16:41:52.693 WiscLand[3478:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-05 16:41:53.089 WiscLand[3478:80b] Unlimited access to network resources
-2014-03-05 16:41:56.617 WiscLand[3478:80b] Resetting plugins due to page load.
-2014-03-05 16:42:02.420 WiscLand[3478:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 18:36:07.596 WiscLand[6272:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 18:36:07.803 WiscLand[6272:80b] Unlimited access to network resources
-2014-03-06 18:36:10.659 WiscLand[6272:80b] Resetting plugins due to page load.
-2014-03-06 18:36:12.960 WiscLand[6272:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 18:38:37.210 WiscLand[6593:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 18:38:37.220 WiscLand[6593:80b] Unlimited access to network resources
-2014-03-06 18:38:37.456 WiscLand[6593:80b] Resetting plugins due to page load.
-2014-03-06 18:38:37.996 WiscLand[6593:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:06:11.945 WiscLand[7165:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:06:11.983 WiscLand[7165:80b] Unlimited access to network resources
-2014-03-06 19:06:12.138 WiscLand[7165:80b] Resetting plugins due to page load.
-2014-03-06 19:06:17.852 WiscLand[7165:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:08:10.943 WiscLand[7491:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:08:10.974 WiscLand[7491:80b] Unlimited access to network resources
-2014-03-06 19:08:11.166 WiscLand[7491:80b] Resetting plugins due to page load.
-2014-03-06 19:08:13.009 WiscLand[7491:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFillColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetStrokeColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSaveGState: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFlatness: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextAddPath: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextDrawPath: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextRestoreGState: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSaveGState: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFlatness: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextAddPath: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextDrawPath: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextRestoreGState: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFillColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetStrokeColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFillColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetStrokeColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextGetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextFillRects: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFillColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetStrokeColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextGetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextFillRects: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetFillColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetStrokeColorWithColor: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextGetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextFillRects: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-Mar  6 19:08:19 wifi-67.cs.wisc.edu WiscLand[7491] <Error>: CGContextSetBlendMode: invalid context 0x0. This is a serious error. This application, or a library it uses, is using an invalid context  and is thereby contributing to an overall degradation of system stability and reliability. This notice is a courtesy: please fix this problem. It will become a fatal error in an upcoming update.
-2014-03-06 19:23:17.515 WiscLand[8206:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:23:17.522 WiscLand[8206:80b] Unlimited access to network resources
-2014-03-06 19:23:17.745 WiscLand[8206:80b] Resetting plugins due to page load.
-2014-03-06 19:23:18.269 WiscLand[8206:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:24:31.324 WiscLand[8528:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:24:31.335 WiscLand[8528:80b] Unlimited access to network resources
-2014-03-06 19:24:31.604 WiscLand[8528:80b] Resetting plugins due to page load.
-2014-03-06 19:24:32.024 WiscLand[8528:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:41:06.568 WiscLand[8883:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:41:06.577 WiscLand[8883:80b] Unlimited access to network resources
-2014-03-06 19:41:06.712 WiscLand[8883:80b] Resetting plugins due to page load.
-2014-03-06 19:41:07.444 WiscLand[8883:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:41:57.127 WiscLand[9202:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:41:57.138 WiscLand[9202:80b] Unlimited access to network resources
-2014-03-06 19:41:57.461 WiscLand[9202:80b] Resetting plugins due to page load.
-2014-03-06 19:41:57.993 WiscLand[9202:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:42:04.277 WiscLand[9202:80b] CDVWebViewDelegate: Navigation started when state=1
-2014-03-06 19:42:04.278 WiscLand[9202:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
-2014-03-06 19:46:21.293 WiscLand[9537:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:46:21.299 WiscLand[9537:80b] Unlimited access to network resources
-2014-03-06 19:46:21.555 WiscLand[9537:80b] Resetting plugins due to page load.
-2014-03-06 19:46:22.138 WiscLand[9537:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:46:36.151 WiscLand[9537:80b] CDVWebViewDelegate: Navigation started when state=1
-2014-03-06 19:46:36.151 WiscLand[9537:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
-2014-03-06 19:49:08.315 WiscLand[9537:80b] Received memory warning.
-2014-03-06 19:49:44.788 WiscLand[9906:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:49:44.796 WiscLand[9906:80b] Unlimited access to network resources
-2014-03-06 19:49:45.024 WiscLand[9906:80b] Resetting plugins due to page load.
-2014-03-06 19:49:45.625 WiscLand[9906:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:51:38.401 WiscLand[10232:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:51:38.412 WiscLand[10232:80b] Unlimited access to network resources
-2014-03-06 19:51:38.594 WiscLand[10232:80b] Resetting plugins due to page load.
-2014-03-06 19:51:39.148 WiscLand[10232:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:52:02.691 WiscLand[10548:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:52:02.701 WiscLand[10548:80b] Unlimited access to network resources
-2014-03-06 19:52:02.911 WiscLand[10548:80b] Resetting plugins due to page load.
-2014-03-06 19:52:03.499 WiscLand[10548:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:53:12.306 WiscLand[10870:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:53:12.313 WiscLand[10870:80b] Unlimited access to network resources
-2014-03-06 19:53:12.468 WiscLand[10870:80b] Resetting plugins due to page load.
-2014-03-06 19:53:13.036 WiscLand[10870:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:54:33.768 WiscLand[11190:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:54:33.778 WiscLand[11190:80b] Unlimited access to network resources
-2014-03-06 19:54:33.961 WiscLand[11190:80b] Resetting plugins due to page load.
-2014-03-06 19:54:34.579 WiscLand[11190:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:54:38.618 WiscLand[11190:80b] CDVWebViewDelegate: Navigation started when state=1
-2014-03-06 19:54:38.619 WiscLand[11190:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
-2014-03-06 19:57:13.179 WiscLand[11525:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:57:13.190 WiscLand[11525:80b] Unlimited access to network resources
-2014-03-06 19:57:13.376 WiscLand[11525:80b] Resetting plugins due to page load.
-2014-03-06 19:57:14.237 WiscLand[11525:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:58:04.483 WiscLand[11842:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-06 19:58:04.496 WiscLand[11842:80b] Unlimited access to network resources
-2014-03-06 19:58:04.731 WiscLand[11842:80b] Resetting plugins due to page load.
-2014-03-06 19:58:05.383 WiscLand[11842:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-06 19:58:30.461 WiscLand[11842:80b] CDVWebViewDelegate: Navigation started when state=1
-2014-03-06 19:58:30.462 WiscLand[11842:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
-2014-03-06 20:00:40.027 WiscLand[11842:80b] CDVWebViewDelegate: Navigation started when state=1
-2014-03-06 20:00:40.028 WiscLand[11842:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
-2014-03-06 20:01:07.723 WiscLand[11842:80b] CDVWebViewDelegate: Navigation started when state=1
-2014-03-06 20:01:07.723 WiscLand[11842:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
-2014-03-10 21:07:19.543 WiscLand[23077:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 21:07:20.147 WiscLand[23077:80b] Unlimited access to network resources
-2014-03-10 21:07:22.122 WiscLand[23077:80b] Resetting plugins due to page load.
-2014-03-10 21:08:25.582 WiscLand[23391:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 21:08:25.590 WiscLand[23391:80b] Unlimited access to network resources
-2014-03-10 21:08:25.876 WiscLand[23391:80b] Resetting plugins due to page load.
-2014-03-10 21:10:03.949 WiscLand[23719:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 21:10:03.959 WiscLand[23719:80b] Unlimited access to network resources
-2014-03-10 21:10:04.214 WiscLand[23719:80b] Resetting plugins due to page load.
-2014-03-10 21:13:14.488 WiscLand[23719:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 21:14:40.015 WiscLand[24264:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 21:14:40.026 WiscLand[24264:80b] Unlimited access to network resources
-2014-03-10 21:14:40.197 WiscLand[24264:80b] Resetting plugins due to page load.
-2014-03-10 21:14:43.755 WiscLand[24264:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 21:29:29.016 WiscLand[24624:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 21:29:29.026 WiscLand[24624:80b] Unlimited access to network resources
-2014-03-10 21:29:29.257 WiscLand[24624:80b] Resetting plugins due to page load.
-2014-03-10 21:29:29.603 WiscLand[24624:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/tasks.html
-2014-03-10 21:30:17.176 WiscLand[24942:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 21:30:17.185 WiscLand[24942:80b] Unlimited access to network resources
-2014-03-10 21:30:17.355 WiscLand[24942:80b] Resetting plugins due to page load.
-2014-03-10 21:30:17.864 WiscLand[24942:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 21:32:08.828 WiscLand[25266:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 21:32:08.840 WiscLand[25266:80b] Unlimited access to network resources
-2014-03-10 21:32:09.070 WiscLand[25266:80b] Resetting plugins due to page load.
-2014-03-10 21:32:17.924 WiscLand[25266:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 21:33:07.586 WiscLand[25586:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 21:33:07.606 WiscLand[25586:80b] Unlimited access to network resources
-2014-03-10 21:33:07.862 WiscLand[25586:80b] Resetting plugins due to page load.
-2014-03-10 21:33:08.341 WiscLand[25586:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 21:34:20.055 WiscLand[25907:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 21:34:20.065 WiscLand[25907:80b] Unlimited access to network resources
-2014-03-10 21:34:20.387 WiscLand[25907:80b] Resetting plugins due to page load.
-2014-03-10 21:34:20.854 WiscLand[25907:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 21:38:22.777 WiscLand[26246:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 21:38:22.786 WiscLand[26246:80b] Unlimited access to network resources
-2014-03-10 21:38:23.025 WiscLand[26246:80b] Resetting plugins due to page load.
-2014-03-10 21:38:23.558 WiscLand[26246:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 22:16:54.723 WiscLand[26965:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 22:16:54.730 WiscLand[26965:80b] Unlimited access to network resources
-2014-03-10 22:16:54.923 WiscLand[26965:80b] Resetting plugins due to page load.
-2014-03-10 22:16:55.448 WiscLand[26965:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 22:17:34.150 WiscLand[26965:3f03] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
-2014-03-10 22:17:35.898 WiscLand[26965:80b] CDVWebViewDelegate: Navigation started when state=1
-2014-03-10 22:17:35.898 WiscLand[26965:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
-2014-03-10 22:17:52.400 WiscLand[27289:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 22:17:52.412 WiscLand[27289:80b] Unlimited access to network resources
-2014-03-10 22:17:52.636 WiscLand[27289:80b] Resetting plugins due to page load.
-2014-03-10 22:17:53.133 WiscLand[27289:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 22:21:38.875 WiscLand[27621:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 22:21:38.885 WiscLand[27621:80b] Unlimited access to network resources
-2014-03-10 22:21:39.182 WiscLand[27621:80b] Resetting plugins due to page load.
-2014-03-10 22:21:39.642 WiscLand[27621:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 22:22:52.567 WiscLand[27621:3f03] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
-2014-03-10 22:24:44.568 WiscLand[27953:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 22:24:44.578 WiscLand[27953:80b] Unlimited access to network resources
-2014-03-10 22:24:44.797 WiscLand[27953:80b] Resetting plugins due to page load.
-2014-03-10 22:24:45.268 WiscLand[27953:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 22:31:48.919 WiscLand[28303:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 22:31:48.928 WiscLand[28303:80b] Unlimited access to network resources
-2014-03-10 22:31:49.181 WiscLand[28303:80b] Resetting plugins due to page load.
-2014-03-10 22:31:49.781 WiscLand[28303:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 22:34:39.183 WiscLand[28633:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 22:34:39.193 WiscLand[28633:80b] Unlimited access to network resources
-2014-03-10 22:34:39.437 WiscLand[28633:80b] Resetting plugins due to page load.
-2014-03-10 22:34:39.868 WiscLand[28633:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 22:35:13.665 WiscLand[28953:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 22:35:13.676 WiscLand[28953:80b] Unlimited access to network resources
-2014-03-10 22:35:13.892 WiscLand[28953:80b] Resetting plugins due to page load.
-2014-03-10 22:35:14.306 WiscLand[28953:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 22:40:43.898 WiscLand[29430:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 22:40:43.908 WiscLand[29430:80b] Unlimited access to network resources
-2014-03-10 22:40:44.557 WiscLand[29430:80b] Resetting plugins due to page load.
-2014-03-10 22:40:45.913 WiscLand[29430:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 22:40:50.719 WiscLand[29430:80b] CDVWebViewDelegate: Navigation started when state=1
-2014-03-10 22:40:50.719 WiscLand[29430:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
-2014-03-10 22:43:38.330 WiscLand[29763:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 22:43:38.338 WiscLand[29763:80b] Unlimited access to network resources
-2014-03-10 22:43:38.524 WiscLand[29763:80b] Resetting plugins due to page load.
-2014-03-10 22:43:39.079 WiscLand[29763:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 22:51:08.311 WiscLand[30111:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 22:51:08.320 WiscLand[30111:80b] Unlimited access to network resources
-2014-03-10 22:51:08.492 WiscLand[30111:80b] Resetting plugins due to page load.
-2014-03-10 22:51:09.000 WiscLand[30111:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 22:51:43.711 WiscLand[30111:80b] CDVWebViewDelegate: Navigation started when state=1
-2014-03-10 22:51:43.711 WiscLand[30111:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
-2014-03-10 23:03:51.697 WiscLand[31057:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:03:51.707 WiscLand[31057:80b] Unlimited access to network resources
-2014-03-10 23:03:51.784 WiscLand[31057:80b] Resetting plugins due to page load.
-2014-03-10 23:03:54.149 WiscLand[31057:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:08:22.648 WiscLand[31406:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:08:22.660 WiscLand[31406:80b] Unlimited access to network resources
-2014-03-10 23:08:22.954 WiscLand[31406:80b] Resetting plugins due to page load.
-2014-03-10 23:08:23.468 WiscLand[31406:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:12:47.463 WiscLand[31744:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:12:47.470 WiscLand[31744:80b] Unlimited access to network resources
-2014-03-10 23:12:47.684 WiscLand[31744:80b] Resetting plugins due to page load.
-2014-03-10 23:12:48.124 WiscLand[31744:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:13:59.634 WiscLand[32068:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:13:59.653 WiscLand[32068:80b] Unlimited access to network resources
-2014-03-10 23:13:59.911 WiscLand[32068:80b] Resetting plugins due to page load.
-2014-03-10 23:14:00.339 WiscLand[32068:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:15:31.202 WiscLand[32393:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:15:31.213 WiscLand[32393:80b] Unlimited access to network resources
-2014-03-10 23:15:31.434 WiscLand[32393:80b] Resetting plugins due to page load.
-2014-03-10 23:15:35.190 WiscLand[32393:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:16:39.272 WiscLand[32715:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:16:39.283 WiscLand[32715:80b] Unlimited access to network resources
-2014-03-10 23:16:39.582 WiscLand[32715:80b] Resetting plugins due to page load.
-2014-03-10 23:16:40.084 WiscLand[32715:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:21:07.186 WiscLand[33050:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:21:07.192 WiscLand[33050:80b] Unlimited access to network resources
-2014-03-10 23:21:07.405 WiscLand[33050:80b] Resetting plugins due to page load.
-2014-03-10 23:21:07.898 WiscLand[33050:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:25:28.274 WiscLand[33378:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:25:28.283 WiscLand[33378:80b] Unlimited access to network resources
-2014-03-10 23:25:28.539 WiscLand[33378:80b] Resetting plugins due to page load.
-2014-03-10 23:25:28.963 WiscLand[33378:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:26:36.900 WiscLand[33702:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:26:36.907 WiscLand[33702:80b] Unlimited access to network resources
-2014-03-10 23:26:37.063 WiscLand[33702:80b] Resetting plugins due to page load.
-2014-03-10 23:26:37.729 WiscLand[33702:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:27:19.128 WiscLand[34023:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:27:19.138 WiscLand[34023:80b] Unlimited access to network resources
-2014-03-10 23:27:19.402 WiscLand[34023:80b] Resetting plugins due to page load.
-2014-03-10 23:27:19.856 WiscLand[34023:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:29:56.986 WiscLand[34354:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:29:56.996 WiscLand[34354:80b] Unlimited access to network resources
-2014-03-10 23:29:57.211 WiscLand[34354:80b] Resetting plugins due to page load.
-2014-03-10 23:29:57.777 WiscLand[34354:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:34:01.171 WiscLand[34683:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:34:01.182 WiscLand[34683:80b] Unlimited access to network resources
-2014-03-10 23:34:01.435 WiscLand[34683:80b] Resetting plugins due to page load.
-2014-03-10 23:34:02.067 WiscLand[34683:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:37:00.552 WiscLand[35018:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:37:00.558 WiscLand[35018:80b] Unlimited access to network resources
-2014-03-10 23:37:00.804 WiscLand[35018:80b] Resetting plugins due to page load.
-2014-03-10 23:37:01.418 WiscLand[35018:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:37:29.102 WiscLand[35018:3f03] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
-2014-03-10 23:45:51.810 WiscLand[35352:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:45:51.821 WiscLand[35352:80b] Unlimited access to network resources
-2014-03-10 23:45:52.083 WiscLand[35352:80b] Resetting plugins due to page load.
-2014-03-10 23:45:52.671 WiscLand[35352:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:48:39.733 WiscLand[35682:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:48:39.762 WiscLand[35682:80b] Unlimited access to network resources
-2014-03-10 23:48:40.016 WiscLand[35682:80b] Resetting plugins due to page load.
-2014-03-10 23:48:40.527 WiscLand[35682:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:49:22.263 WiscLand[36002:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:49:22.273 WiscLand[36002:80b] Unlimited access to network resources
-2014-03-10 23:49:22.493 WiscLand[36002:80b] Resetting plugins due to page load.
-2014-03-10 23:49:23.013 WiscLand[36002:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-10 23:49:54.623 WiscLand[36321:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-10 23:49:54.634 WiscLand[36321:80b] Unlimited access to network resources
-2014-03-10 23:49:54.872 WiscLand[36321:80b] Resetting plugins due to page load.
-2014-03-10 23:49:55.387 WiscLand[36321:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-Terminating in response to SpringBoard's termination.
-2014-03-11 09:33:37.117 WiscLand[37400:80b] Multi-tasking -> Device: YES, App: YES
-2014-03-11 09:33:37.296 WiscLand[37400:80b] Unlimited access to network resources
-2014-03-11 09:33:38.887 WiscLand[37400:80b] Resetting plugins due to page load.
-2014-03-11 09:33:40.217 WiscLand[37400:80b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/F07F7606-5871-47EF-837A-727D1E7E8F60/WiscLand.app/www/index.html
-2014-03-11 09:39:01.781 WiscLand[37400:80b] CDVWebViewDelegate: Navigation started when state=1
-2014-03-11 09:39:01.781 WiscLand[37400:80b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-03-14 16:06:56.745 WiscLand[47035:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-14 16:06:56.860 WiscLand[47035:70b] Unlimited access to network resources
+2014-03-14 16:06:59.077 WiscLand[47035:70b] Resetting plugins due to page load.
+2014-03-14 16:07:00.404 WiscLand[47035:70b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BD0425D4-913A-42B3-BBBB-264A326D90A3/WiscLand.app/www/index.html
+2014-03-14 16:36:28.247 WiscLand[47593:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-14 16:36:28.254 WiscLand[47593:70b] Unlimited access to network resources
+2014-03-14 16:36:28.301 WiscLand[47593:70b] Resetting plugins due to page load.
+2014-03-14 16:36:29.019 WiscLand[47593:70b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BD0425D4-913A-42B3-BBBB-264A326D90A3/WiscLand.app/www/index.html
+2014-03-14 16:37:13.898 WiscLand[47893:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-14 16:37:13.904 WiscLand[47893:70b] Unlimited access to network resources
+2014-03-14 16:37:13.953 WiscLand[47893:70b] Resetting plugins due to page load.
+2014-03-14 16:37:14.571 WiscLand[47893:70b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BD0425D4-913A-42B3-BBBB-264A326D90A3/WiscLand.app/www/index.html
+2014-03-14 16:41:50.436 WiscLand[48505:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-14 16:41:50.442 WiscLand[48505:70b] Unlimited access to network resources
+2014-03-14 16:41:50.490 WiscLand[48505:70b] Resetting plugins due to page load.
+2014-03-14 16:41:51.073 WiscLand[48505:70b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BD0425D4-913A-42B3-BBBB-264A326D90A3/WiscLand.app/www/index.html
+2014-03-14 16:45:34.850 WiscLand[49110:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-14 16:45:34.856 WiscLand[49110:70b] Unlimited access to network resources
+2014-03-14 16:45:34.906 WiscLand[49110:70b] Resetting plugins due to page load.
+2014-03-14 16:45:35.570 WiscLand[49110:70b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BD0425D4-913A-42B3-BBBB-264A326D90A3/WiscLand.app/www/index.html
+2014-03-14 17:01:20.878 WiscLand[49739:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-14 17:01:20.884 WiscLand[49739:70b] Unlimited access to network resources
+2014-03-14 17:01:20.933 WiscLand[49739:70b] Resetting plugins due to page load.
+2014-03-14 17:01:21.601 WiscLand[49739:70b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BD0425D4-913A-42B3-BBBB-264A326D90A3/WiscLand.app/www/index.html
+2014-03-14 17:04:02.319 WiscLand[50340:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-14 17:04:02.327 WiscLand[50340:70b] Unlimited access to network resources
+2014-03-14 17:04:02.374 WiscLand[50340:70b] Resetting plugins due to page load.
+2014-03-14 17:04:02.987 WiscLand[50340:70b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BD0425D4-913A-42B3-BBBB-264A326D90A3/WiscLand.app/www/index.html
+2014-03-14 17:06:25.846 WiscLand[50935:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-14 17:06:25.852 WiscLand[50935:70b] Unlimited access to network resources
+2014-03-14 17:06:25.899 WiscLand[50935:70b] Resetting plugins due to page load.
+2014-03-14 17:06:26.591 WiscLand[50935:70b] Finished load of: file:///Users/Jared/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/BD0425D4-913A-42B3-BBBB-264A326D90A3/WiscLand.app/www/index.html

@@ -11,7 +11,7 @@
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
-        <script language="javascript" type="text/javascript" src="js/tasks.js"></script> 
+        <script language="javascript" type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body onload="init()"> 
@@ -37,18 +37,54 @@
 
         
         </form>
-        <ul data-role="listview" data-divider-theme="a" data-inset="false">
-            <li data-theme="a"><a href="tasks.html" data-transition="slide">Login</a></li>
-        </ul>
-        <!-- <button data-role="button" id="loginBtn" data-theme="a">Login</button> -->
+        <button data-role="button" id="loginBtn" data-theme="a">Login</button>
     </div>
 
-    <div data-theme="a" data-role="footer">
-                <h3>
-                    UW-Madison
-                </h3>
-            </div>
+        <div data-theme="a" data-role="footer">
+        <h3>
+            UW-Madison
+        </h3>
+    </div>
+<script language="javascript" type="text/javascript" src="js/index.js"></script>
+
 </div>
-<script language="javascript" type="text/javascript" src="js/index.js"></script> 
+
+<div id="tasksPage" data-role="page" data-theme="a">
+        <div data-theme="a" data-role="header" id="header">
+                <strong id="WINGS">Wisconsin Mapping Tool</strong>
+     </div>
+
+
+<div data-role="content" data-theme="a">    
+        <ul data-role="listview" data-divider-theme="a" data-inset="false">
+            <li data-role="list-divider" role="heading">
+                Current Tasks
+            </li>
+            <li data-theme="a">
+                <a href="data_entry.html" data-transition="slide">
+                    Task 1
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="data_entry.html" data-transition="slide">
+                    Task 2
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="data_entry.html" data-transition="slide">
+                    Task 3
+                </a>
+            </li>
+        </ul> 
+</div>
+
+
+    <div data-theme="a" data-role="footer">
+        <h3>
+            UW-Madison
+        </h3>
+    </div>
+</div>
+
 </body>
 </html>

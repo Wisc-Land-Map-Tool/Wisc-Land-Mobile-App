@@ -37,19 +37,56 @@
 
         
         </form>
-<!--         <ul data-role="listview" data-divider-theme="a" data-inset="false">
-            <li data-theme="a"><a href="tasks.html" data-transition="slide">Login</a></li>
-        </ul> -->
         <button data-role="button" id="loginBtn" data-theme="a">Login</button>
     </div>
 
-    <div data-theme="a" data-role="footer">
-                <h3>
-                    UW-Madison
-                </h3>
-            </div>
+        <div data-theme="a" data-role="footer">
+        <h3>
+            UW-Madison
+        </h3>
+    </div>
+<script language="javascript" type="text/javascript" src="js/index.js"></script>
+
 </div>
-<!-- <script language="javascript" type="text/javascript" src="js/index.js"></script> --> 
+
+<div id="tasksPage" data-role="page" data-theme="a">
+        <div data-theme="a" data-role="header" id="header">
+                <strong id="WINGS">Wisconsin Mapping Tool</strong>
+     </div>
+
+
+<div data-role="content" data-theme="a">    
+        <ul data-role="listview" data-divider-theme="a" data-inset="false">
+            <li data-role="list-divider" role="heading">
+                Current Tasks
+            </li>
+            <li data-theme="a">
+                <a href="data_entry.html" data-transition="slide">
+                    Task 1
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="data_entry.html" data-transition="slide">
+                    Task 2
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="data_entry.html" data-transition="slide">
+                    Task 3
+                </a>
+            </li>
+        </ul> 
+</div>
+
+
+    <div data-theme="a" data-role="footer">
+        <h3>
+            UW-Madison
+        </h3>
+    </div>
+</div>
+
+</body>
 <script>
 
 function init() {
@@ -59,8 +96,6 @@ function init() {
 }
 
 $("#loginBtn").click(function (e) {
-
-
 
         var u = $("#email").val();
         var p = $("#password").val();
@@ -75,8 +110,14 @@ $("#loginBtn").click(function (e) {
         dataType: "json",
         contentType: "application/json; charset=utf-8",
         success: function(data){
-            console.log(data.error);
-            alert("Success Alert"); 
+            alert(data.error);
+
+            $(':mobile-pagecontainer').pagecontainer('change', '#tasksPage', {
+        transition: 'flip',
+        changeHash: false,
+        reverse: true,
+        showLoadMsg: true
+    });
              
         },
         
@@ -87,8 +128,42 @@ $("#loginBtn").click(function (e) {
         
         });
 
+
+$(document).on("pagecreate", "#tasksPage", function( event ) {
+        $.ajax({
+        url: "http://localhost:3000/users/1/assignments",
+        type: "POST",
+      
+        data: JSON.stringify({user: {id: 1}}),
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        success: function(data){
+            console.log(data);
+
+            $(':mobile-pagecontainer').pagecontainer('change', '#tasksPage', {
+        transition: 'flip',
+        changeHash: false,
+        reverse: true,
+        showLoadMsg: true
+    });
+             
+        },
+        
+        error: function(error) {
+            alert(error.responseText)
+            alert("error alert");
+        }
+        
+        });
+
+
+
+
+
+});
+
+
+
 });
 </script>
-
-</body>
 </html>

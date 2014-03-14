@@ -4,7 +4,7 @@ $(document).on("pagecreate", "#tasksPage", function( event ) {
 
 
 	$.ajax({
-    url: "http://localhost:3000/users/1/assignments",
+    url: "http://localhost:3000/users/assignments",
     type: "POST",
     data: 1,
   	dataType: "json",
