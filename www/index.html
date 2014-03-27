@@ -99,8 +99,6 @@ $("#loginBtn").click(function (e) {
 
         var u = $("#email").val();
         var p = $("#password").val();
-        alert(u);
-        alert(p);
 
         $.ajax({
         url: "http://localhost:3000/users/sign_in.json",
@@ -110,7 +108,7 @@ $("#loginBtn").click(function (e) {
         dataType: "json",
         contentType: "application/json; charset=utf-8",
         success: function(data){
-            alert(data.error);
+            alert("Successfully Logging in");
 
             $(':mobile-pagecontainer').pagecontainer('change', '#tasksPage', {
         transition: 'flip',
@@ -123,7 +121,7 @@ $("#loginBtn").click(function (e) {
         
         error: function(error) {
             console.log(error.responseText)
-            alert("error alert");
+            alert(error.responseText);
         }
         
         });
@@ -138,20 +136,14 @@ $(document).on("pagecreate", "#tasksPage", function( event ) {
         dataType: "json",
         contentType: "application/json; charset=utf-8",
         success: function(data){
-            console.log(data);
-
-            $(':mobile-pagecontainer').pagecontainer('change', '#tasksPage', {
-        transition: 'flip',
-        changeHash: false,
-        reverse: true,
-        showLoadMsg: true
-    });
+            // console.log(data);
+            // alert(data);
              
         },
         
         error: function(error) {
-            alert(error.responseText)
-            alert("error alert");
+            // alert(error.responseText)
+            // alert("error alert");
         }
         
         });

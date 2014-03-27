@@ -11,7 +11,7 @@
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
-        <script language="javascript" type="text/javascript" src="js/index.js"></script>
+
 </head>
 
 <body onload="init()"> 
@@ -45,7 +45,7 @@
             UW-Madison
         </h3>
     </div>
-<script language="javascript" type="text/javascript" src="js/index.js"></script>
+<!-- <script language="javascript" type="text/javascript" src="js/index.js"></script> -->
 
 </div>
 
@@ -87,4 +87,75 @@
 </div>
 
 </body>
+<script>
+
+function init() {
+
+ document.addEventListener("deviceready", deviceReady, true);
+ delete init;
+}
+
+$("#loginBtn").click(function (e) {
+
+        var u = $("#email").val();
+        var p = $("#password").val();
+
+        $.ajax({
+        url: "http://localhost:3000/users/sign_in.json",
+        type: "POST",
+      
+        data: JSON.stringify({user: {email: u, password: p}}),
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        success: function(data){
+            alert("Successfully Logging in");
+
+            $(':mobile-pagecontainer').pagecontainer('change', '#tasksPage', {
+        transition: 'flip',
+        changeHash: false,
+        reverse: true,
+        showLoadMsg: true
+    });
+             
+        },
+        
+        error: function(error) {
+            console.log(error.responseText)
+            alert(error.responseText);
+        }
+        
+        });
+
+
+$(document).on("pagecreate", "#tasksPage", function( event ) {
+        $.ajax({
+        url: "http://localhost:3000/users/1/assignments",
+        type: "POST",
+      
+        data: JSON.stringify({user: {id: 1}}),
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        success: function(data){
+            // console.log(data);
+            // alert(data);
+             
+        },
+        
+        error: function(error) {
+            // alert(error.responseText)
+            // alert("error alert");
+        }
+        
+        });
+
+
+
+
+
+});
+
+
+
+});
+</script>
 </html>
