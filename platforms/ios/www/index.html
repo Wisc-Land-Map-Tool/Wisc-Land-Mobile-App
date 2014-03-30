@@ -61,19 +61,7 @@
                 Current Tasks
             </li>
             <li data-theme="a">
-                <a href="data_entry.html" data-transition="slide">
-                    Task 1
-                </a>
-            </li>
-            <li data-theme="a">
-                <a href="data_entry.html" data-transition="slide">
-                    Task 2
-                </a>
-            </li>
-            <li data-theme="a">
-                <a href="data_entry.html" data-transition="slide">
-                    Task 3
-                </a>
+                <button data-role="button" id="btnData_Entry" data-theme="a">Task 1</button>
             </li>
         </ul> 
 </div>
@@ -86,8 +74,112 @@
     </div>
 </div>
 
+<div id="data_entry" data-role="page" data-theme="a">
+
+    <div data-theme="a" data-role="header" id="header">
+        <a data-role="button" data-rel="back" href="#page6" class="ui-btn-left" id="back">
+            Back
+        </a>
+        <h5>
+            Wisconsin Land Tool
+        </h5>
+    </div>
+
+    <div data-role="content" data-theme="a">    
+        <h3>
+            Task Data Entry
+        </h3>
+        <form action="">
+            <div data-role="fieldcontain" data-controltype="selectmenu">
+                <label for="selectCoverType">
+                    Cover Type
+                </label>
+                <select id="selectCoverType" name="">
+                    <option value="">
+                        Select One
+                    </option>
+                    <option value="1">
+                        Urban Developed
+                    </option>
+                    <option value="2">
+                        Agriculture
+                    </option>
+                    <option value="3">
+                        Forest
+                    </option>
+                    <option value="4">
+                        Shrubland
+                    </option>
+                    <option value="5">
+                        Grassland
+                    </option>
+                    <option value="6">
+                        Open Water
+                    </option>
+                    <option value="7">
+                        Barren
+                    </option>
+                    <option value="8">
+                        Wetland
+                    </option>
+                </select>
+            </div>
+        <div id="selectCoverType2_div"data-role="fieldcontain" data-controltype="selectmenu">
+                <select id="selectCoverType2" name="">
+                </select>
+            </div>
+            <div id="selectCoverType3_div"data-role="fieldcontain" data-controltype="selectmenu">
+                <select id="selectCoverType3" name="">
+                </select>
+            </div>
+        </form>
+    </div>
+    <div data-theme="a" data-role="footer" data-inset="false">
+                <h3>
+                    UW-Madison
+                </h3>
+    </div>
+</div>
+
 </body>
 <script>
+
+var classifications = {1:
+                        [{ "text":"High Intensity Urban" , "value":"11" }, 
+                        { "text":"Low Intensity Urban" , "value":"12"}],
+               
+               2:       [{"text":"Row Crops", "value":"21" },
+                        {  "text": "Forage Crops", "value":"22"}],
+               
+               3:       [{"text":"Coniferous", "value":"31" },
+                        {  "text": "Broad-leaved Deciduous", "value":"32"},
+                        {  "text": "Mixed Coniferous/Broad-leaved Deciduous", "value":"33"},
+                        {  "text": "Clearcut/Young Plantation", "value":"34"}],
+               
+               4:       [{"text":"Upland Shrub", "value":"41" }],
+
+               5:       [{"text":"Grassland", "value":"51" }],
+
+               6:       [{"text":"Open Water", "value":"61" }],
+               
+               7:       [{"text":"Sand", "value":"71" },
+                        {  "text": "Bare Soil", "value":"72"},
+                        {  "text": "Exposed Rock", "value":"73"},
+                        {  "text": "Mixed", "value":"74"}],
+               
+               8:       [{"text":"Emergent/Wet Meadow", "value":"81" },
+                        {  "text": "Lowland Shrub", "value":"82"},
+                        {  "text": "Broad-leaved Evergreen", "value":"83"},
+                        {  "text": "Forested Wetland", "value":"84"}],
+
+              82:       [{ "text":"Coniferous" , "value":"821" }, 
+                        { "text":"Broad-leaved Deciduous" , "value":"822"}],
+
+              84:       [{"text":"Coniferous", "value":"841" },
+                        {  "text": "Broad-leaved Deciduous", "value":"842"},
+                        {  "text": "Mixed Coniferous/Broad-leaved Deciduous", "value":"843"}]
+
+                };
 
 function init() {
 
@@ -96,7 +188,6 @@ function init() {
 }
 
 $("#loginBtn").click(function (e) {
-
         var u = $("#email").val();
         var p = $("#password").val();
 
@@ -111,9 +202,8 @@ $("#loginBtn").click(function (e) {
             alert("Successfully Logging in");
 
             $(':mobile-pagecontainer').pagecontainer('change', '#tasksPage', {
-        transition: 'flip',
+        transition: 'slide',
         changeHash: false,
-        reverse: true,
         showLoadMsg: true
     });
              
@@ -157,5 +247,101 @@ $(document).on("pagecreate", "#tasksPage", function( event ) {
 
 
 });
+
+$(document).on("pagecreate", "#data_entry", function( event ) {
+    $("#selectCoverType2_div").hide();
+    $("#selectCoverType3_div").hide();
+});
+
+
+$("#btnData_Entry").click(function (e) {
+    $(':mobile-pagecontainer').pagecontainer('change', '#data_entry', {
+        transition: 'slide',
+        changeHash: false,
+        showLoadMsg: true
+    });
+});
+
+
+$("#selectCoverType").change(function() {
+
+    var selected = $(this).val();
+
+    $("#selectCoverType3").empty();
+    $("#selectCoverType3_div").hide();
+
+    $("#selectCoverType2").empty();
+
+
+    if(selected == ""){
+        $("#selectCoverType2_div").hide();
+        $("#selectCoverType3").selectmenu("refresh");
+        return;
+    }
+
+    $("#selectCoverType2_div").show();
+
+
+    var children = classifications[selected];
+    console.log(children);
+
+    $('#selectCoverType2').append('<option value=""> Select One </option>');
+
+    for( var i = 0 ; i < children.length; i++ ) {
+
+        $('#selectCoverType2').append('<option value='+ children[i].value +'> ' + children[i].text + ' </option>');
+
+    }
+
+    $("#selectCoverType2").selectmenu("refresh");
+
+});
+
+$("#selectCoverType2").change(function() {
+
+    $("#selectCoverType3").empty();
+    
+    var selected = $(this).val();
+    var children = classifications[selected];
+
+    if(children == null){
+        $("#selectCoverType3_div").hide();
+
+        return;
+    }
+
+    $("#selectCoverType3_div").show();
+    console.log(children);
+
+    $('#selectCoverType3').append('<option value=""> Select One </option>');
+
+    for( var i = 0 ; i < children.length; i++ ) {
+
+        $('#selectCoverType3').append('<option value='+ children[i].value +'> ' + children[i].text + ' </option>');
+
+    }
+
+    $("#selectCoverType3").selectmenu("refresh");
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 </html>
