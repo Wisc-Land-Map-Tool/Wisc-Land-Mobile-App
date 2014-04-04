@@ -145,7 +145,7 @@
                     </select>
                   </div>
                   <div class="ui-block-b">
-                    <input type="number" name="number"  id="number-pattern" value="">
+                    <input type="number" name="number"  id="speciesPercentage" value="">
                   </div>
                   <div class="ui-block-c">
                     <button data-role="button" id="newSpeciesEntry" data-icon="plus" data-iconpos="notext"></button>
@@ -161,9 +161,76 @@
                     <input type="radio" name="radio-choice" id="radio-choice-2" value="no">
                     <label for="radio-choice-2">No</label>
                 </fieldset>
-                <label for="textarea-forest">Forest Species Comments</label>
-                    <textarea name="textarea" id="textarea-forest">
-                    </textarea>
+                <label for="textarea-forest">Forest Species Comments:</label>
+                    <textarea name="textarea" id="textarea-forest"></textarea>
+            <div>
+                <label for="basic">Canopy Coverage (%):</label>
+                    <input type="text" name="name" id="canopyCoverage" value="0" data-mini="true" disabled = "disabled" />
+            </div>
+            <div id="vegetation_div">
+                <label for="basic">Mark the understory vegetation present:</label>
+                    <input type="checkbox" id="small-tree" name="Vegetation" value="1">
+                    <label for="small-tree">Small Tree</label>
+                    <input type="checkbox" id="vegetation" name="Vegetation" value="2">
+                    <label for="vegetation">Vegetation</label>
+                    <input type="checkbox" id="saplings" name="Vegetation" value="3"> 
+                    <label for="saplings">Saplings</label>
+                    <input type="checkbox" id="herbaceous-vegetation" name="Vegetation" value="4">
+                    <label for="herbaceous-vegetation">Herbaceous Vegetation</label>
+            </div>
+            <div>
+                <label for="textarea-canopy">Canopy & Understory Comments:</label>
+                    <textarea name="textarea" id="textarea-canopy"></textarea>
+            </div>
+             <div data-role="fieldcontain" data-controltype="selectmenu">
+                <label for="identification_type">
+                    Method of Identification
+                </label>
+                <select id="identification_type" name="">
+                    <option value="">
+                        Select One
+                    </option>
+                    <option value="1">
+                        Field Verification (i.e. able to identify location and access area circled)
+                    </option>
+                    <option value="2">
+                        Windshield Survey (i.e. could not enter identified area, but identified species from outside area)
+                    </option>
+                    <option value="3">
+                        Inaccessable Polygon
+                    </option>
+                    <option value="4">
+                        Photo Interpreted/Knowledge of Area
+                    </option>
+                </select>
+            </div>
+            <div data-role="fieldcontain" data-controltype="selectmenu">
+                <label for="confidence_level">
+                    Confidence Level of Assessment
+                </label>
+                <select id="confidence_level" name="">
+                    <option value="">
+                        Select One
+                    </option>
+                    <option value="1">
+                        High (good)
+                    </option>
+                    <option value="2">
+                        Medium
+                    </option>
+                    <option value="3">
+                        Low (questionable)
+                    </option>
+                </select>
+            </div>
+            <div>
+                <label for="textarea-canopy">Additional Comments:</label>
+                    <textarea name="textarea" id="textarea-canopy"></textarea>
+            </div>
+            <div>
+                <input type ="button" value="Cancel"/>
+                <input type="submit" value="Submit" />
+            </div>
         </form>
     </div>
     <div data-theme="a" data-role="footer" data-inset="false">
@@ -177,6 +244,8 @@
 <script>
 
 var idCounter = 1;
+
+var canopyPer = 0;
 
 var classifications = {1:
                         [{ "text":"High Intensity Urban" , "value":"11" }, 
@@ -411,12 +480,13 @@ $("#selectCoverType2").change(function() {
 $("#newSpeciesEntry").click(function (e) {
 
 
-$('#forestSpecies_grid').append('<div id="speciesDivId'+idCounter+'" class="ui-block-a"><select id="selectForestSpecies'+idCounter+'" name=""><option value="">Select One</option></select></div><div class="ui-block-b"><input type="number" name="number" pattern="[0-100]*" id="speciesPercentage'+idCounter+'" value=""></div><div class="ui-block-c"><button id="deleteSpecies'+idCounter+'" data-role="button" data-icon="delete" data-iconpos="notext" onClick="return deleteRow(this);"></button></div>');
+$('#forestSpecies_grid').append('<div id="speciesDivId'+idCounter+'" class="ui-block-a"><select id="selectForestSpecies'+idCounter+'" name=""><option value=' +$('#selectForestSpecies').val() +'>' + $('#selectForestSpecies option:selected').text()+ '</option></select></div><div class="ui-block-b"><input type="number" name="number" pattern="[0-100]*" onchange="canopyPercentage()" id="speciesPercentage'+idCounter+'" value=' +$('#speciesPercentage').val()+'></div><div class="ui-block-c"><button id="deleteSpecies'+idCounter+'" data-role="button" data-icon="delete" data-iconpos="notext" onClick="return deleteRow(this);"></button></div>');
 
-populateSpecies();
-
+$('#selectForestSpecies').val("");
+$('#speciesPercentage').val("");
+ $("#selectForestSpecies").selectmenu("refresh");
 idCounter++;
-
+canopyPercentage();
 
 $('#forestSpecies_grid').trigger('create');
 
@@ -446,11 +516,29 @@ function deleteRow(currentRow){
     $( "#selectForestSpecies"+rowNum+"").remove();
     $( "#deleteSpecies"+rowNum+"").remove();
     $( "#speciesPercentage"+rowNum+"").remove();
+    canopyPercentage()
 
 
 
 
     return false;
+}
+
+function canopyPercentage(){ 
+    
+    canopyPer = 0;
+    for(var i = 1; i < idCounter; i++){
+        if($("#speciesPercentage"+i).length){
+            canopyPer += parseInt($( "#speciesPercentage"+i).val());
+        }
+    }
+    $("#canopyCoverage").val(canopyPer);
+    if(canopyPer >= 80){
+        $('#vegetation_div').hide();
+    }
+    else{
+        $('#vegetation_div').show();
+    }
 }
 
 
