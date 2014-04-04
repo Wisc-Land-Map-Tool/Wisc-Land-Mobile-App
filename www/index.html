@@ -16,7 +16,7 @@
 
 <body onload="init()"> 
     
-<div id="loginPage" data-role="page" data-theme="a">
+<!-- <div id="loginPage" data-role="page" data-theme="a">
 
     <div data-theme="a" data-role="header" id="header">
                 <strong id="WINGS">Wisconsin Mapping Tool</strong>
@@ -64,7 +64,7 @@
                 <button data-role="button" id="btnData_Entry" data-theme="a">Task 1</button>
             </li>
         </ul> 
-</div>
+</div> -->
 
 
     <div data-theme="a" data-role="footer">
@@ -124,7 +124,7 @@
                     </option>
                 </select>
             </div>
-        <div id="selectCoverType2_div"data-role="fieldcontain" data-controltype="selectmenu">
+            <div id="selectCoverType2_div"data-role="fieldcontain" data-controltype="selectmenu">
                 <select id="selectCoverType2" name="">
                 </select>
             </div>
@@ -132,6 +132,38 @@
                 <select id="selectCoverType3" name="">
                 </select>
             </div>
+            <div id="forestSpecies_div"data-role="fieldcontain" data-controltype="selectmenu">
+                <label for="selectForestSpecies">
+                    Forest Species
+                </label>
+                <div class="ui-grid-b" id="forestSpecies_grid">
+                  <div class="ui-block-a">
+                    <select id="selectForestSpecies" name="">
+                        <option value="">
+                             Select One
+                        </option>
+                    </select>
+                  </div>
+                  <div class="ui-block-b">
+                    <input type="number" name="number"  id="number-pattern" value="">
+                  </div>
+                  <div class="ui-block-c">
+                    <button data-role="button" id="newSpeciesEntry" data-icon="plus" data-iconpos="notext"></button>
+                  </div>
+                </div>
+
+            </div>
+                <fieldset data-role="controlgroup">
+                    <legend>Are trees at mature height?</legend>
+                    <input type="radio" name="radio-choice" id="radio-choice-1" value="yes">
+                    <label for="radio-choice-1">Yes</label>
+                     
+                    <input type="radio" name="radio-choice" id="radio-choice-2" value="no">
+                    <label for="radio-choice-2">No</label>
+                </fieldset>
+                <label for="textarea-forest">Forest Species Comments</label>
+                    <textarea name="textarea" id="textarea-forest">
+                    </textarea>
         </form>
     </div>
     <div data-theme="a" data-role="footer" data-inset="false">
@@ -143,6 +175,8 @@
 
 </body>
 <script>
+
+var idCounter = 1;
 
 var classifications = {1:
                         [{ "text":"High Intensity Urban" , "value":"11" }, 
@@ -172,12 +206,46 @@ var classifications = {1:
                         {  "text": "Broad-leaved Evergreen", "value":"83"},
                         {  "text": "Forested Wetland", "value":"84"}],
 
-              82:       [{ "text":"Coniferous" , "value":"821" }, 
+              9:       [{ "text":"Coniferous" , "value":"821" }, 
                         { "text":"Broad-leaved Deciduous" , "value":"822"}],
 
-              84:       [{"text":"Coniferous", "value":"841" },
+              10:       [{"text":"Coniferous", "value":"841" },
                         {  "text": "Broad-leaved Deciduous", "value":"842"},
                         {  "text": "Mixed Coniferous/Broad-leaved Deciduous", "value":"843"}]
+
+                };
+
+var species = {
+
+                1: [{ "text":"Alder" , "value":"1" },
+                   { "text":"Almer. Elm" , "value":"2" },
+                   { "text":"Aspen" , "value":"3" },
+                   { "text":"Balsam Fir" , "value":"4" },
+                   { "text":"Basswood" , "value":"5" },
+                   { "text":"Beech" , "value":"6" },
+                   { "text":"Black Ash" , "value":"7" },
+                   { "text":"Black Cherry" , "value":"8" },
+                   { "text":"Black Spruce" , "value":"9" },
+                   { "text":"Black Willow" , "value":"10" },
+                   { "text":"Cottonwood" , "value":"11" },
+                   { "text":"Green Ash" , "value":"12" },
+                   { "text":"Hemlock" , "value":"13" },
+                   { "text":"Jack Pine" , "value":"14" },
+                   { "text":"N. Pin Oak" , "value":"15" },
+                   { "text":"Red Maple" , "value":"16" },
+                   { "text":"Red Pine" , "value":"17" },
+                   { "text":"Red/Black Oak" , "value":"18" },
+                   { "text":"River Birch" , "value":"19" },
+                   { "text":"Silver Maple" , "value":"20" },
+                   { "text":"Slippery Elm" , "value":"21" },
+                   { "text":"Supar Maple" , "value":"22" },
+                   { "text":"Tamarack" , "value":"23" },
+                   { "text":"White Birch" , "value":"24" },
+                   { "text":"White Cedar" , "value":"25" },
+                   { "text":"White Pine" , "value":"26" },
+                   { "text":"White Spruce" , "value":"27" },
+                   { "text":" White/Bur Oak" , "value":"28" },
+                   { "text":"Yellow Birch" , "value":"29" }]
 
                 };
 
@@ -251,6 +319,20 @@ $(document).on("pagecreate", "#tasksPage", function( event ) {
 $(document).on("pagecreate", "#data_entry", function( event ) {
     $("#selectCoverType2_div").hide();
     $("#selectCoverType3_div").hide();
+
+    species_data = species[1];
+
+    for( var i = 0 ; i < species_data.length; i++ ) {
+        $('#selectForestSpecies').append('<option value='+ species_data[i].value +'> ' + species_data[i].text + ' </option>');
+
+    }
+
+    $("#selectForestSpecies").selectmenu("refresh");
+    
+
+
+
+
 });
 
 
@@ -326,20 +408,50 @@ $("#selectCoverType2").change(function() {
 });
 
 
+$("#newSpeciesEntry").click(function (e) {
+
+
+$('#forestSpecies_grid').append('<div id="speciesDivId'+idCounter+'" class="ui-block-a"><select id="selectForestSpecies'+idCounter+'" name=""><option value="">Select One</option></select></div><div class="ui-block-b"><input type="number" name="number" pattern="[0-100]*" id="speciesPercentage'+idCounter+'" value=""></div><div class="ui-block-c"><button id="deleteSpecies'+idCounter+'" data-role="button" data-icon="delete" data-iconpos="notext" onClick="return deleteRow(this);"></button></div>');
+
+populateSpecies();
+
+idCounter++;
+
+
+$('#forestSpecies_grid').trigger('create');
+
+e.preventDefault();
+
+});
+
+function populateSpecies(){
+
+    species_data = species[1];
+    for( var i = 0 ; i < species_data.length; i++ ) {
+        $('#selectForestSpecies'+idCounter+'').append('<option value='+ species_data[i].value +'> ' + species_data[i].text + ' </option>');
+
+    }
+
+    // $('#selectForestSpecies'+speciesSelectId+'').selectmenu("refresh");
+
+}
+
+function deleteRow(currentRow){
+    var rowNum = currentRow.id.replace( "deleteSpecies", '');
+    console.log("speciesRow"+rowNum+"");
+
+
+    // $( ".speciesRow"+rowNum+"" ).remove();
+    $( "#speciesDivId"+rowNum+"").remove();
+    $( "#selectForestSpecies"+rowNum+"").remove();
+    $( "#deleteSpecies"+rowNum+"").remove();
+    $( "#speciesPercentage"+rowNum+"").remove();
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+    return false;
+}
 
 
 
