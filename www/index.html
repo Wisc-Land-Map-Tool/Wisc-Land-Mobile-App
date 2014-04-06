@@ -89,12 +89,12 @@
         <h3>
             Task Data Entry
         </h3>
-        <form action="">
+        <form action="index.html" method="POST">
             <div data-role="fieldcontain" data-controltype="selectmenu">
                 <label for="selectCoverType">
                     Cover Type
                 </label>
-                <select id="selectCoverType" name="">
+                <select id="selectCoverType" name="coverType1">
                     <option value="">
                         Select One
                     </option>
@@ -125,11 +125,11 @@
                 </select>
             </div>
             <div id="selectCoverType2_div"data-role="fieldcontain" data-controltype="selectmenu">
-                <select id="selectCoverType2" name="">
+                <select id="selectCoverType2" name="coverType2">
                 </select>
             </div>
             <div id="selectCoverType3_div"data-role="fieldcontain" data-controltype="selectmenu">
-                <select id="selectCoverType3" name="">
+                <select id="selectCoverType3" name="coverType3">
                 </select>
             </div>
             <div id="forestSpecies_div"data-role="fieldcontain" data-controltype="selectmenu">
@@ -138,14 +138,14 @@
                 </label>
                 <div class="ui-grid-b" id="forestSpecies_grid">
                   <div class="ui-block-a">
-                    <select id="selectForestSpecies" name="">
+                    <select id="selectForestSpecies" name="forestSpecies">
                         <option value="">
                              Select One
                         </option>
                     </select>
                   </div>
                   <div class="ui-block-b">
-                    <input type="number" name="number"  id="speciesPercentage" value="">
+                    <input type="number" name="speciesPer"  id="speciesPercentage" value="">
                   </div>
                   <div class="ui-block-c">
                     <button data-role="button" id="newSpeciesEntry" data-icon="plus" data-iconpos="notext"></button>
@@ -155,38 +155,38 @@
             </div>
                 <fieldset data-role="controlgroup">
                     <legend>Are trees at mature height?</legend>
-                    <input type="radio" name="radio-choice" id="radio-choice-1" value="yes">
+                    <input type="radio" name="radio-choice" id="radio-choice-1" value="yes" name="treesAreMatureHeight">
                     <label for="radio-choice-1">Yes</label>
                      
-                    <input type="radio" name="radio-choice" id="radio-choice-2" value="no">
+                    <input type="radio" name="radio-choice" id="radio-choice-2" value="no" name="treesAreMatureHeight">
                     <label for="radio-choice-2">No</label>
                 </fieldset>
                 <label for="textarea-forest">Forest Species Comments:</label>
-                    <textarea name="textarea" id="textarea-forest"></textarea>
+                    <textarea name="forestSpeciesComments" id="textarea-forest"></textarea>
             <div>
                 <label for="basic">Canopy Coverage (%):</label>
-                    <input type="text" name="name" id="canopyCoverage" value="0" data-mini="true" disabled = "disabled" />
+                    <input type="text" id="canopyCoverage" value="0" data-mini="true" name="canopyCov" disabled="disabled"/>
             </div>
             <div id="vegetation_div">
                 <label for="basic">Mark the understory vegetation present:</label>
-                    <input type="checkbox" id="small-tree" name="Vegetation" value="1">
+                    <input type="checkbox" id="small-tree" name="Vegetation" value="1" name="understory">
                     <label for="small-tree">Small Tree</label>
-                    <input type="checkbox" id="vegetation" name="Vegetation" value="2">
+                    <input type="checkbox" id="vegetation" name="Vegetation" value="2" name="understory">
                     <label for="vegetation">Vegetation</label>
-                    <input type="checkbox" id="saplings" name="Vegetation" value="3"> 
+                    <input type="checkbox" id="saplings" name="Vegetation" value="3" name="understory"> 
                     <label for="saplings">Saplings</label>
-                    <input type="checkbox" id="herbaceous-vegetation" name="Vegetation" value="4">
+                    <input type="checkbox" id="herbaceous-vegetation" name="Vegetation" value="4" name="understory">
                     <label for="herbaceous-vegetation">Herbaceous Vegetation</label>
             </div>
             <div>
                 <label for="textarea-canopy">Canopy & Understory Comments:</label>
-                    <textarea name="textarea" id="textarea-canopy"></textarea>
+                    <textarea name="canopyComments" id="textarea-canopy"></textarea>
             </div>
              <div data-role="fieldcontain" data-controltype="selectmenu">
                 <label for="identification_type">
                     Method of Identification
                 </label>
-                <select id="identification_type" name="">
+                <select id="identification_type" name="methodOfID">
                     <option value="">
                         Select One
                     </option>
@@ -208,7 +208,7 @@
                 <label for="confidence_level">
                     Confidence Level of Assessment
                 </label>
-                <select id="confidence_level" name="">
+                <select id="confidence_level" name="confidenceLevel">
                     <option value="">
                         Select One
                     </option>
@@ -225,11 +225,13 @@
             </div>
             <div>
                 <label for="textarea-canopy">Additional Comments:</label>
-                    <textarea name="textarea" id="textarea-canopy"></textarea>
+                    <textarea name="additionalComments" id="textarea-canopy"></textarea>
             </div>
             <div>
-                <input type ="button" value="Cancel"/>
-                <input type="submit" value="Submit" />
+                <input type="button" value="Cancel"/>
+                <!-- <input type="button" value="Submit" form="classification" onclick="convertFormToJSON()"/> -->
+                <input type="submit" value="Submit"/>
+              
             </div>
         </form>
     </div>
@@ -480,7 +482,7 @@ $("#selectCoverType2").change(function() {
 $("#newSpeciesEntry").click(function (e) {
 
 
-$('#forestSpecies_grid').append('<div id="speciesDivId'+idCounter+'" class="ui-block-a"><select id="selectForestSpecies'+idCounter+'" name=""><option value=' +$('#selectForestSpecies').val() +'>' + $('#selectForestSpecies option:selected').text()+ '</option></select></div><div class="ui-block-b"><input type="number" name="number" pattern="[0-100]*" onchange="canopyPercentage()" id="speciesPercentage'+idCounter+'" value=' +$('#speciesPercentage').val()+'></div><div class="ui-block-c"><button id="deleteSpecies'+idCounter+'" data-role="button" data-icon="delete" data-iconpos="notext" onClick="return deleteRow(this);"></button></div>');
+$('#forestSpecies_grid').append('<div id="speciesDivId'+idCounter+'" class="ui-block-a"><select id="selectForestSpecies'+idCounter+'" name="ForestSpecies'+idCounter+'"><option value=' +$('#selectForestSpecies').val() +'>' + $('#selectForestSpecies option:selected').text()+ '</option></select></div><div class="ui-block-b"><input type="number" name="ForestSpeciesPer'+idCounter+'" pattern="[0-100]*" onchange="canopyPercentage()" id="speciesPercentage'+idCounter+'" value=' +$('#speciesPercentage').val()+'></div><div class="ui-block-c"><button id="deleteSpecies'+idCounter+'" data-role="button" data-icon="delete" data-iconpos="notext" onClick="return deleteRow(this);"></button></div>');
 
 $('#selectForestSpecies').val("");
 $('#speciesPercentage').val("");
@@ -540,8 +542,29 @@ function canopyPercentage(){
         $('#vegetation_div').show();
     }
 }
+$.fn.serializeObject = function()
+{
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
 
-
+$(function() {
+    $('form').submit(function() {
+        console.log(JSON.stringify($('form').serializeObject()));
+        return false;
+    });
+});
 
 </script>
 </html>
