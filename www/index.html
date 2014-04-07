@@ -155,17 +155,17 @@
             </div>
                 <fieldset data-role="controlgroup">
                     <legend>Are trees at mature height?</legend>
-                    <input type="radio" name="radio-choice" id="radio-choice-1" value="yes" name="treesAreMatureHeight">
+                    <input type="radio" id="radio-choice-1" value="yes" name="treesAreMatureHeight">
                     <label for="radio-choice-1">Yes</label>
                      
-                    <input type="radio" name="radio-choice" id="radio-choice-2" value="no" name="treesAreMatureHeight">
+                    <input type="radio" id="radio-choice-2" value="no" name="treesAreMatureHeight">
                     <label for="radio-choice-2">No</label>
                 </fieldset>
                 <label for="textarea-forest">Forest Species Comments:</label>
                     <textarea name="forestSpeciesComments" id="textarea-forest"></textarea>
             <div>
                 <label for="basic">Canopy Coverage (%):</label>
-                    <input type="text" id="canopyCoverage" value="0" data-mini="true" name="canopyCov" disabled="disabled"/>
+                    <input type="text" id="canopyCoverage" value="0" data-mini="true" name="canopyCov" readonly="readonly"/>
             </div>
             <div id="vegetation_div">
                 <label for="basic">Mark the understory vegetation present:</label>
@@ -377,10 +377,6 @@ $(document).on("pagecreate", "#tasksPage", function( event ) {
         
         });
 
-
-
-
-
 });
 
 
@@ -400,9 +396,6 @@ $(document).on("pagecreate", "#data_entry", function( event ) {
 
     $("#selectForestSpecies").selectmenu("refresh");
     
-
-
-
 
 });
 
