@@ -151,9 +151,7 @@
                     <button data-role="button" id="newSpeciesEntry" data-icon="plus" data-iconpos="notext"></button>
                   </div>
                 </div>
-
-            </div>
-                <fieldset data-role="controlgroup">
+                <fieldset>
                     <legend>Are trees at mature height?</legend>
                     <input type="radio" id="radio-choice-1" value="yes" name="treesAreMatureHeight">
                     <label for="radio-choice-1">Yes</label>
@@ -161,8 +159,11 @@
                     <input type="radio" id="radio-choice-2" value="no" name="treesAreMatureHeight">
                     <label for="radio-choice-2">No</label>
                 </fieldset>
-                <label for="textarea-forest">Forest Species Comments:</label>
+                 <label for="textarea-forest">Forest Species Comments:</label>
                     <textarea name="forestSpeciesComments" id="textarea-forest"></textarea>
+            </div>
+                
+               
             <div>
                 <label for="basic">Canopy Coverage (%):</label>
                     <input type="text" id="canopyCoverage" value="0" data-mini="true" name="canopyCov" readonly="readonly"/>
@@ -191,10 +192,10 @@
                         Select One
                     </option>
                     <option value="1">
-                        Field Verification (i.e. able to identify location and access area circled)
+                        Field Verification
                     </option>
                     <option value="2">
-                        Windshield Survey (i.e. could not enter identified area, but identified species from outside area)
+                        Windshield Survey
                     </option>
                     <option value="3">
                         Inaccessable Polygon
@@ -277,10 +278,10 @@ var classifications = {1:
                         {  "text": "Broad-leaved Evergreen", "value":"83"},
                         {  "text": "Forested Wetland", "value":"84"}],
 
-              9:       [{ "text":"Coniferous" , "value":"821" }, 
+              82:       [{ "text":"Coniferous" , "value":"821" }, 
                         { "text":"Broad-leaved Deciduous" , "value":"822"}],
 
-              10:       [{"text":"Coniferous", "value":"841" },
+              84:       [{"text":"Coniferous", "value":"841" },
                         {  "text": "Broad-leaved Deciduous", "value":"842"},
                         {  "text": "Mixed Coniferous/Broad-leaved Deciduous", "value":"843"}]
 
@@ -386,6 +387,7 @@ $(document).on("pagecreate", "#tasksPage", function( event ) {
 $(document).on("pagecreate", "#data_entry", function( event ) {
     $("#selectCoverType2_div").hide();
     $("#selectCoverType3_div").hide();
+    $("#forestSpecies_div").hide();
 
     species_data = species[1];
 
@@ -417,13 +419,17 @@ $("#selectCoverType").change(function() {
     $("#selectCoverType3_div").hide();
 
     $("#selectCoverType2").empty();
-
+    $("#forestSpecies_div").hide();
 
     if(selected == ""){
         $("#selectCoverType2_div").hide();
         $("#selectCoverType3").selectmenu("refresh");
         return;
     }
+     if(selected == "3"){
+            $("#forestSpecies_div").show();
+            $("#forestSpecies_grid").show();
+        }
 
     $("#selectCoverType2_div").show();
 
@@ -449,7 +455,16 @@ $("#selectCoverType2").change(function() {
     
     var selected = $(this).val();
     var children = classifications[selected];
-
+    var covType1 = $("#selectCoverType").val();
+    
+    if(covType1 != "3"){
+        $("#forestSpecies_div").hide();
+         $("#forestSpecies_grid").hide();
+    }
+      if(selected == "84"){
+        $("#forestSpecies_grid").show();
+        $("#forestSpecies_div").show();
+    }
     if(children == null){
         $("#selectCoverType3_div").hide();
 
@@ -475,7 +490,7 @@ $("#selectCoverType2").change(function() {
 $("#newSpeciesEntry").click(function (e) {
 
 
-$('#forestSpecies_grid').append('<div id="speciesDivId'+idCounter+'" class="ui-block-a"><select id="selectForestSpecies'+idCounter+'" name="ForestSpecies'+idCounter+'"><option value=' +$('#selectForestSpecies').val() +'>' + $('#selectForestSpecies option:selected').text()+ '</option></select></div><div class="ui-block-b"><input type="number" name="ForestSpeciesPer'+idCounter+'" pattern="[0-100]*" onchange="canopyPercentage()" id="speciesPercentage'+idCounter+'" value=' +$('#speciesPercentage').val()+'></div><div class="ui-block-c"><button id="deleteSpecies'+idCounter+'" data-role="button" data-icon="delete" data-iconpos="notext" onClick="return deleteRow(this);"></button></div>');
+$('#forestSpecies_grid').append('<div id="speciesDivId'+idCounter+'" class="ui-block-a"><select id="selectForestSpecies'+idCounter+'" name="ForestSpecies'+idCounter+'"><option value=' +$('#selectForestSpecies').val() +'>' + $('#selectForestSpecies option:selected').text()+ '</option></select></div><div class="ui-block-b"><input type="number" name="ForestSpeciesPer'+idCounter+'" pattern="^[1-9][0-9]?$|^100$" onchange="canopyPercentage()" id="speciesPercentage'+idCounter+'" value=' +$('#speciesPercentage').val()+'></div><div class="ui-block-c"><button id="deleteSpecies'+idCounter+'" data-role="button" data-icon="delete" data-iconpos="notext" onClick="return deleteRow(this);"></button></div>');
 
 $('#selectForestSpecies').val("");
 $('#speciesPercentage').val("");
