@@ -16,10 +16,10 @@
 
 <body onload="init()"> 
     
-<!-- <div id="loginPage" data-role="page" data-theme="a">
+ <div id="loginPage" data-role="page" data-theme="a">
 
     <div data-theme="a" data-role="header" id="header">
-                <strong id="WINGS">Wisconsin Mapping Tool</strong>
+                <strong id="WISCLAND">Wisconsin Mapping Tool</strong>
      </div>
 
     <div data-role="content" data-theme="a">    
@@ -64,7 +64,7 @@
                 <button data-role="button" id="btnData_Entry" data-theme="a">Task 1</button>
             </li>
         </ul> 
-</div> -->
+</div> 
 
 
     <div data-theme="a" data-role="footer">
@@ -339,6 +339,7 @@ $("#loginBtn").click(function (e) {
         dataType: "json",
         contentType: "application/json; charset=utf-8",
         success: function(data){
+            localStorage.setItem('user_id',data.user)
             alert("Successfully Logging in");
 
             $(':mobile-pagecontainer').pagecontainer('change', '#tasksPage', {
@@ -550,6 +551,19 @@ function canopyPercentage(){
         $('#vegetation_div').show();
     }
 }
+function composeSpecies(){ 
+    speciesList=[]
+    for(var i = 1; i < idCounter; i++){
+        if($("#speciesPercentage"+i).length){
+            species={}
+            species['percentage']=parseInt($( "#speciesPercentage"+i).val())
+            species['forest_type_id']= $( "#selectForestSpecies"+i).val()
+            speciesList.push(species)
+        }
+    }
+    return speciesList
+}
+
 $.fn.serializeObject = function()
 {
     var o = {};
@@ -570,12 +584,14 @@ $.fn.serializeObject = function()
 $(function() {
     $('form').submit(function() {
 
-        var formData=JSON.stringify($('form').serializeObject());
-
+        var formData=$('form').serializeObject();
+        formData['species']=composeSpecies();
+     //   formData['user_id']=localStorage.getItem("user_id")
+        console.log(formData)
         $.ajax({
-            url: "http://localhost:3000/fieldData",
+            url: "http://localhost:3000/field_datas/submit",
             type: "POST",
-            data: formData,
+            data: JSON.stringify(formData),
             dataType: "json",
             contentType: "application/json; charset=utf-8",
             contentType: "application/json",
