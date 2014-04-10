@@ -569,7 +569,24 @@ $.fn.serializeObject = function()
 
 $(function() {
     $('form').submit(function() {
-        console.log(JSON.stringify($('form').serializeObject()));
+
+        var formData=JSON.stringify($('form').serializeObject());
+
+        $.ajax({
+            url: "http://localhost:3000/fieldData",
+            type: "POST",
+            data: formData,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            contentType: "application/json",
+            success: function(data){
+
+
+            },
+            
+            error: function(error) {
+              console.log(error.responseText)
+          }});
         return false;
     });
 });
