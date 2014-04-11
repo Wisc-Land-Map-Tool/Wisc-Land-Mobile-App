@@ -42,3 +42,13 @@ must be running simultaneously to respond to the client calls of this applicatio
 
 If running in the browser, security must be disabled by using --disable-web-security in the url box (Chrome) for making cross origin AJAX calls in our application.
 
+
+# Running tests
+
+To run the tests, go to
+
+/www/js/test.html
+
+To see code coverage, check the code coverage check on the tests page.
+
+
