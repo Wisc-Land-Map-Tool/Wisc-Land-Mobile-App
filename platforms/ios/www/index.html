@@ -6,20 +6,21 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css"/>
-        <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/index.css">
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
 
 </head>
 
 <body onload="init()"> 
-    
-<!-- <div id="loginPage" data-role="page" data-theme="a">
+ <div id="loginPage" data-role="page" data-theme="a">
 
     <div data-theme="a" data-role="header" id="header">
-                <strong id="WINGS">Wisconsin Mapping Tool</strong>
+                <strong id="WISCLAND">Wisconsin Mapping Tool</strong>
      </div>
 
     <div data-role="content" data-theme="a">    
@@ -56,15 +57,57 @@
 
 
 <div data-role="content" data-theme="a">    
-        <ul data-role="listview" data-divider-theme="a" data-inset="false">
+<!--         <ul data-role="listview" data-divider-theme="a" data-inset="false">
             <li data-role="list-divider" role="heading">
                 Current Tasks
             </li>
             <li data-theme="a">
                 <button data-role="button" id="btnData_Entry" data-theme="a">Task 1</button>
             </li>
-        </ul> 
-</div> -->
+        </ul> -->
+        <div id="map"></div>
+        <script>
+            var map = L.map('map');
+            
+            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+    var osm = new L.TileLayer(osmUrl, {minZoom: 2, maxZoom: 20, attribution: osmAttrib}).addTo(map);       
+
+    // start the map in South-East England
+    map.setView(new L.LatLng(44.4, -89.7),7);
+    map.addLayer(osm);
+    map.invalidateSize();
+
+
+
+            var polygon = L.polygon([
+    [43.1, -89.5],
+    [43.0, -89.5],
+    [43.1, -90]
+]).addTo(map);
+
+            var popup = L.popup()
+//     .setLatLng([51.5, -0.09])
+//     .setContent("I am a standalone popup.")
+//     .openOn(map);
+//     var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+}
+
+function onPolygonClick(e) {
+    alert("test click");
+}
+
+map.on('click', onMapClick);
+polygon.on('click', onPolygonClick);
+
+        </script>
+</div> 
 
 
     <div data-theme="a" data-role="footer">
@@ -89,12 +132,12 @@
         <h3>
             Task Data Entry
         </h3>
-        <form action="">
+        <form action="index.html" method="POST">
             <div data-role="fieldcontain" data-controltype="selectmenu">
                 <label for="selectCoverType">
                     Cover Type
                 </label>
-                <select id="selectCoverType" name="">
+                <select id="selectCoverType" name="coverType1">
                     <option value="">
                         Select One
                     </option>
@@ -125,11 +168,11 @@
                 </select>
             </div>
             <div id="selectCoverType2_div"data-role="fieldcontain" data-controltype="selectmenu">
-                <select id="selectCoverType2" name="">
+                <select id="selectCoverType2" name="coverType2">
                 </select>
             </div>
             <div id="selectCoverType3_div"data-role="fieldcontain" data-controltype="selectmenu">
-                <select id="selectCoverType3" name="">
+                <select id="selectCoverType3" name="coverType3">
                 </select>
             </div>
             <div id="forestSpecies_div"data-role="fieldcontain" data-controltype="selectmenu">
@@ -138,32 +181,102 @@
                 </label>
                 <div class="ui-grid-b" id="forestSpecies_grid">
                   <div class="ui-block-a">
-                    <select id="selectForestSpecies" name="">
+                    <select id="selectForestSpecies" name="forestSpecies">
                         <option value="">
                              Select One
                         </option>
                     </select>
                   </div>
                   <div class="ui-block-b">
-                    <input type="number" name="number"  id="number-pattern" value="">
+                    <input type="number" name="speciesPer"  id="speciesPercentage" value="">
                   </div>
                   <div class="ui-block-c">
                     <button data-role="button" id="newSpeciesEntry" data-icon="plus" data-iconpos="notext"></button>
                   </div>
                 </div>
-
-            </div>
-                <fieldset data-role="controlgroup">
+                <fieldset>
                     <legend>Are trees at mature height?</legend>
-                    <input type="radio" name="radio-choice" id="radio-choice-1" value="yes">
+                    <input type="radio" id="radio-choice-1" value="yes" name="treesAreMatureHeight">
                     <label for="radio-choice-1">Yes</label>
                      
-                    <input type="radio" name="radio-choice" id="radio-choice-2" value="no">
+                    <input type="radio" id="radio-choice-2" value="no" name="treesAreMatureHeight">
                     <label for="radio-choice-2">No</label>
                 </fieldset>
-                <label for="textarea-forest">Forest Species Comments</label>
-                    <textarea name="textarea" id="textarea-forest">
-                    </textarea>
+                 <label for="textarea-forest">Forest Species Comments:</label>
+                    <textarea name="forestSpeciesComments" id="textarea-forest"></textarea>
+            </div>
+                
+               
+            <div>
+                <label for="basic">Canopy Coverage (%):</label>
+                    <input type="text" id="canopyCoverage" value="0" data-mini="true" name="canopyCov" readonly="readonly"/>
+            </div>
+            <div id="vegetation_div">
+                <label for="basic">Mark the understory vegetation present:</label>
+                    <input type="checkbox" id="small-tree" name="Vegetation" value="1" name="understory">
+                    <label for="small-tree">Small Tree</label>
+                    <input type="checkbox" id="vegetation" name="Vegetation" value="2" name="understory">
+                    <label for="vegetation">Vegetation</label>
+                    <input type="checkbox" id="saplings" name="Vegetation" value="3" name="understory"> 
+                    <label for="saplings">Saplings</label>
+                    <input type="checkbox" id="herbaceous-vegetation" name="Vegetation" value="4" name="understory">
+                    <label for="herbaceous-vegetation">Herbaceous Vegetation</label>
+            </div>
+            <div>
+                <label for="textarea-canopy">Canopy & Understory Comments:</label>
+                    <textarea name="canopyComments" id="textarea-canopy"></textarea>
+            </div>
+             <div data-role="fieldcontain" data-controltype="selectmenu">
+                <label for="identification_type">
+                    Method of Identification
+                </label>
+                <select id="identification_type" name="methodOfID">
+                    <option value="">
+                        Select One
+                    </option>
+                    <option value="1">
+                        Field Verification
+                    </option>
+                    <option value="2">
+                        Windshield Survey
+                    </option>
+                    <option value="3">
+                        Inaccessable Polygon
+                    </option>
+                    <option value="4">
+                        Photo Interpreted/Knowledge of Area
+                    </option>
+                </select>
+            </div>
+            <div data-role="fieldcontain" data-controltype="selectmenu">
+                <label for="confidence_level">
+                    Confidence Level of Assessment
+                </label>
+                <select id="confidence_level" name="confidenceLevel">
+                    <option value="">
+                        Select One
+                    </option>
+                    <option value="1">
+                        High (good)
+                    </option>
+                    <option value="2">
+                        Medium
+                    </option>
+                    <option value="3">
+                        Low (questionable)
+                    </option>
+                </select>
+            </div>
+            <div>
+                <label for="textarea-canopy">Additional Comments:</label>
+                    <textarea name="additionalComments" id="textarea-canopy"></textarea>
+            </div>
+            <div>
+                <input type="button" value="Cancel"/>
+                <!-- <input type="button" value="Submit" form="classification" onclick="convertFormToJSON()"/> -->
+                <input type="submit" value="Submit"/>
+              
+            </div>
         </form>
     </div>
     <div data-theme="a" data-role="footer" data-inset="false">
@@ -172,288 +285,8 @@
                 </h3>
     </div>
 </div>
+        <script src="js/index.js"></script>
 
 </body>
-<script>
 
-var idCounter = 1;
-
-var classifications = {1:
-                        [{ "text":"High Intensity Urban" , "value":"11" }, 
-                        { "text":"Low Intensity Urban" , "value":"12"}],
-               
-               2:       [{"text":"Row Crops", "value":"21" },
-                        {  "text": "Forage Crops", "value":"22"}],
-               
-               3:       [{"text":"Coniferous", "value":"31" },
-                        {  "text": "Broad-leaved Deciduous", "value":"32"},
-                        {  "text": "Mixed Coniferous/Broad-leaved Deciduous", "value":"33"},
-                        {  "text": "Clearcut/Young Plantation", "value":"34"}],
-               
-               4:       [{"text":"Upland Shrub", "value":"41" }],
-
-               5:       [{"text":"Grassland", "value":"51" }],
-
-               6:       [{"text":"Open Water", "value":"61" }],
-               
-               7:       [{"text":"Sand", "value":"71" },
-                        {  "text": "Bare Soil", "value":"72"},
-                        {  "text": "Exposed Rock", "value":"73"},
-                        {  "text": "Mixed", "value":"74"}],
-               
-               8:       [{"text":"Emergent/Wet Meadow", "value":"81" },
-                        {  "text": "Lowland Shrub", "value":"82"},
-                        {  "text": "Broad-leaved Evergreen", "value":"83"},
-                        {  "text": "Forested Wetland", "value":"84"}],
-
-              9:       [{ "text":"Coniferous" , "value":"821" }, 
-                        { "text":"Broad-leaved Deciduous" , "value":"822"}],
-
-              10:       [{"text":"Coniferous", "value":"841" },
-                        {  "text": "Broad-leaved Deciduous", "value":"842"},
-                        {  "text": "Mixed Coniferous/Broad-leaved Deciduous", "value":"843"}]
-
-                };
-
-var species = {
-
-                1: [{ "text":"Alder" , "value":"1" },
-                   { "text":"Almer. Elm" , "value":"2" },
-                   { "text":"Aspen" , "value":"3" },
-                   { "text":"Balsam Fir" , "value":"4" },
-                   { "text":"Basswood" , "value":"5" },
-                   { "text":"Beech" , "value":"6" },
-                   { "text":"Black Ash" , "value":"7" },
-                   { "text":"Black Cherry" , "value":"8" },
-                   { "text":"Black Spruce" , "value":"9" },
-                   { "text":"Black Willow" , "value":"10" },
-                   { "text":"Cottonwood" , "value":"11" },
-                   { "text":"Green Ash" , "value":"12" },
-                   { "text":"Hemlock" , "value":"13" },
-                   { "text":"Jack Pine" , "value":"14" },
-                   { "text":"N. Pin Oak" , "value":"15" },
-                   { "text":"Red Maple" , "value":"16" },
-                   { "text":"Red Pine" , "value":"17" },
-                   { "text":"Red/Black Oak" , "value":"18" },
-                   { "text":"River Birch" , "value":"19" },
-                   { "text":"Silver Maple" , "value":"20" },
-                   { "text":"Slippery Elm" , "value":"21" },
-                   { "text":"Supar Maple" , "value":"22" },
-                   { "text":"Tamarack" , "value":"23" },
-                   { "text":"White Birch" , "value":"24" },
-                   { "text":"White Cedar" , "value":"25" },
-                   { "text":"White Pine" , "value":"26" },
-                   { "text":"White Spruce" , "value":"27" },
-                   { "text":" White/Bur Oak" , "value":"28" },
-                   { "text":"Yellow Birch" , "value":"29" }]
-
-                };
-
-function init() {
-
- document.addEventListener("deviceready", deviceReady, true);
- delete init;
-}
-
-$("#loginBtn").click(function (e) {
-        var u = $("#email").val();
-        var p = $("#password").val();
-
-        $.ajax({
-        url: "http://localhost:3000/users/sign_in.json",
-        type: "POST",
-      
-        data: JSON.stringify({user: {email: u, password: p}}),
-        dataType: "json",
-        contentType: "application/json; charset=utf-8",
-        success: function(data){
-            alert("Successfully Logging in");
-
-            $(':mobile-pagecontainer').pagecontainer('change', '#tasksPage', {
-        transition: 'slide',
-        changeHash: false,
-        showLoadMsg: true
-    });
-             
-        },
-        
-        error: function(error) {
-            console.log(error.responseText)
-            alert(error.responseText);
-        }
-        
-        });
-
-
-$(document).on("pagecreate", "#tasksPage", function( event ) {
-        $.ajax({
-        url: "http://localhost:3000/users/1/assignments",
-        type: "POST",
-      
-        data: JSON.stringify({user: {id: 1}}),
-        dataType: "json",
-        contentType: "application/json; charset=utf-8",
-        success: function(data){
-            // console.log(data);
-            // alert(data);
-             
-        },
-        
-        error: function(error) {
-            // alert(error.responseText)
-            // alert("error alert");
-        }
-        
-        });
-
-
-
-
-
-});
-
-
-
-});
-
-$(document).on("pagecreate", "#data_entry", function( event ) {
-    $("#selectCoverType2_div").hide();
-    $("#selectCoverType3_div").hide();
-
-    species_data = species[1];
-
-    for( var i = 0 ; i < species_data.length; i++ ) {
-        $('#selectForestSpecies').append('<option value='+ species_data[i].value +'> ' + species_data[i].text + ' </option>');
-
-    }
-
-    $("#selectForestSpecies").selectmenu("refresh");
-    
-
-
-
-
-});
-
-
-$("#btnData_Entry").click(function (e) {
-    $(':mobile-pagecontainer').pagecontainer('change', '#data_entry', {
-        transition: 'slide',
-        changeHash: false,
-        showLoadMsg: true
-    });
-});
-
-
-$("#selectCoverType").change(function() {
-
-    var selected = $(this).val();
-
-    $("#selectCoverType3").empty();
-    $("#selectCoverType3_div").hide();
-
-    $("#selectCoverType2").empty();
-
-
-    if(selected == ""){
-        $("#selectCoverType2_div").hide();
-        $("#selectCoverType3").selectmenu("refresh");
-        return;
-    }
-
-    $("#selectCoverType2_div").show();
-
-
-    var children = classifications[selected];
-    console.log(children);
-
-    $('#selectCoverType2').append('<option value=""> Select One </option>');
-
-    for( var i = 0 ; i < children.length; i++ ) {
-
-        $('#selectCoverType2').append('<option value='+ children[i].value +'> ' + children[i].text + ' </option>');
-
-    }
-
-    $("#selectCoverType2").selectmenu("refresh");
-
-});
-
-$("#selectCoverType2").change(function() {
-
-    $("#selectCoverType3").empty();
-    
-    var selected = $(this).val();
-    var children = classifications[selected];
-
-    if(children == null){
-        $("#selectCoverType3_div").hide();
-
-        return;
-    }
-
-    $("#selectCoverType3_div").show();
-    console.log(children);
-
-    $('#selectCoverType3').append('<option value=""> Select One </option>');
-
-    for( var i = 0 ; i < children.length; i++ ) {
-
-        $('#selectCoverType3').append('<option value='+ children[i].value +'> ' + children[i].text + ' </option>');
-
-    }
-
-    $("#selectCoverType3").selectmenu("refresh");
-
-});
-
-
-$("#newSpeciesEntry").click(function (e) {
-
-
-$('#forestSpecies_grid').append('<div id="speciesDivId'+idCounter+'" class="ui-block-a"><select id="selectForestSpecies'+idCounter+'" name=""><option value="">Select One</option></select></div><div class="ui-block-b"><input type="number" name="number" pattern="[0-100]*" id="speciesPercentage'+idCounter+'" value=""></div><div class="ui-block-c"><button id="deleteSpecies'+idCounter+'" data-role="button" data-icon="delete" data-iconpos="notext" onClick="return deleteRow(this);"></button></div>');
-
-populateSpecies();
-
-idCounter++;
-
-
-$('#forestSpecies_grid').trigger('create');
-
-e.preventDefault();
-
-});
-
-function populateSpecies(){
-
-    species_data = species[1];
-    for( var i = 0 ; i < species_data.length; i++ ) {
-        $('#selectForestSpecies'+idCounter+'').append('<option value='+ species_data[i].value +'> ' + species_data[i].text + ' </option>');
-
-    }
-
-    // $('#selectForestSpecies'+speciesSelectId+'').selectmenu("refresh");
-
-}
-
-function deleteRow(currentRow){
-    var rowNum = currentRow.id.replace( "deleteSpecies", '');
-    console.log("speciesRow"+rowNum+"");
-
-
-    // $( ".speciesRow"+rowNum+"" ).remove();
-    $( "#speciesDivId"+rowNum+"").remove();
-    $( "#selectForestSpecies"+rowNum+"").remove();
-    $( "#deleteSpecies"+rowNum+"").remove();
-    $( "#speciesPercentage"+rowNum+"").remove();
-
-
-
-
-    return false;
-}
-
-
-
-</script>
 </html>
