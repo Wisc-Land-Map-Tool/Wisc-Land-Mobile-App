@@ -137,17 +137,42 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     $('#map').trigger('create');
      setTimeout(function(){
         map.invalidateSize();
-            },1);
+    },1);
 
 
     $.ajax({
          url: "http://localhost:3000/assignments/getTasks",
          type: "POST",
-         data: JSON.stringify({id: user_id}),
+         data: JSON.stringify({id: 2}),
          dataType: "json",
          contentType: "application/json; charset=utf-8",
          success: function(data){
-           console.log(data); 
+           console.log(data);
+
+           var curPolygon;
+            var json;
+            var polygon = [];
+           for(var i = 0; i < data.length; i++){
+                
+                curPolygon = data[i].polygon;
+                if(curPolygon != null)
+                {
+
+                    json = JSON.stringify(eval("(" + curPolygon + ")"));
+                    
+                
+                    polygon[i] = json;
+                }
+
+           }
+
+           for(var i = 0; i < polygon.length; i++){
+                alert("test");
+                console.log(polygon[i]);
+                L.polygon(polygon[i]).addTo(map);
+
+           }
+
             
         },
                          
@@ -161,13 +186,9 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         });
 
 
-        
 
-                var polygon = L.polygon([
-        [43.1, -89.5],
-        [43.0, -89.5],
-        [43.1, -90]
-    ]).addTo(map);
+
+                var polygon = L.polygon([[43.024639401002126,-90.87830157708723],[43.02345461393297, -90.87566664881626]] ).addTo(map);
 
                 var popup = L.popup()
     //     .setLatLng([51.5, -0.09])
@@ -186,8 +207,8 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         alert("test click");
     }
 
-    map.on('click', onMapClick);
-    polygon.on('click', onPolygonClick);
+    // map.on('click', onMapClick);
+    // polygon.on('click', onPolygonClick);
     
             // $.ajax({
             // url: "http://localhost:3000/users/1/assignments",
