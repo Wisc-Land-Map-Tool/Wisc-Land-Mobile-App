@@ -127,10 +127,11 @@ body {
 
 #map {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 20px;
     right: 20px;
     bottom: 20px;
     border: solid 3px #654;
+    padding-top:30px;
 }
 

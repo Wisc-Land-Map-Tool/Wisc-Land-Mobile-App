@@ -118,23 +118,64 @@ $("#loginBtn").click(function (e) {
 login();
 
 $(document).on("pagecreate", "#tasksPage", function( event ) {
-        $.ajax({
-        url: "http://localhost:3000/users/1/assignments",
-        type: "POST",
+
+        var map = L.map('map');
+            
+            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+    var osm = new L.TileLayer(osmUrl, {minZoom: 2, maxZoom: 20, attribution: osmAttrib}).addTo(map);       
+
+    // start the map in South-East England
+    map.setView(new L.LatLng(44.4, -89.7),7);
+    map.addLayer(osm);
+    
+
+            var polygon = L.polygon([
+    [43.1, -89.5],
+    [43.0, -89.5],
+    [43.1, -90]
+]).addTo(map);
+
+            var popup = L.popup()
+//     .setLatLng([51.5, -0.09])
+//     .setContent("I am a standalone popup.")
+//     .openOn(map);
+//     var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+}
+
+function onPolygonClick(e) {
+    alert("test click");
+}
+
+map.on('click', onMapClick);
+polygon.on('click', onPolygonClick);
+$('#map').trigger('create');
+ setTimeout(function(){
+    map.invalidateSize();
+        },1);
+        // $.ajax({
+        // url: "http://localhost:3000/users/1/assignments",
+        // type: "POST",
       
-        data: JSON.stringify({user: {id: 1}}),
-        dataType: "json",
-        contentType: "application/json; charset=utf-8",
-        success: function(data){
-            // console.log(data);
-            // alert(data);
+        // data: JSON.stringify({user: {id: 1}}),
+        // dataType: "json",
+        // contentType: "application/json; charset=utf-8",
+        // success: function(data){
+        //     // console.log(data);
+        //     // alert(data);
              
-        },
+        // },
         
-        error: function(error) {
-            // alert(error.responseText)
-            // alert("error alert");
-        }
+        // error: function(error) {
+        //     // alert(error.responseText)
+        //     // alert("error alert");
+        // }
         
         });
 
@@ -142,7 +183,7 @@ $(document).on("pagecreate", "#tasksPage", function( event ) {
 
 
 
-});
+// });
 
 $(document).on("pagecreate", "#data_entry", function( event ) {
     $("#selectCoverType2_div").hide();

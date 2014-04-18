@@ -115,3 +115,22 @@ h1 {
 }
 
 
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*html, body, #map {
+    height:100%;
+}*/
+
+#map {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: solid 3px #654;
+}
+

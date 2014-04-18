@@ -22,9 +22,14 @@
 /Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/plugins \
 /Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/tasks.html \
 /Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/css/index.css \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/css/qunit.css \
 /Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/img/logo.png \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/js/blanket.min.js \
 /Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/js/index.js \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/js/qunit.js \
 /Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/js/tasks.js \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/js/test.html \
+/Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/js/tests.js \
 /Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/plugins/org.apache.cordova.battery-status \
 /Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/plugins/org.apache.cordova.camera \
 /Users/Jared/Programming/PG_Projects/Wisc-Land-Mobile-App/platforms/android/assets/www/plugins/org.apache.cordova.device \

@@ -67,54 +67,57 @@
         </ul> -->
         <div id="map"></div>
         <script>
-            var map = L.map('map');
             
-            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-    var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-    var osm = new L.TileLayer(osmUrl, {minZoom: 2, maxZoom: 20, attribution: osmAttrib}).addTo(map);       
+//             var map = L.map('map');
+            
+//             var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+//     var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+//     var osm = new L.TileLayer(osmUrl, {minZoom: 2, maxZoom: 20, attribution: osmAttrib}).addTo(map);       
 
-    // start the map in South-East England
-    map.setView(new L.LatLng(44.4, -89.7),7);
-    map.addLayer(osm);
-    map.invalidateSize();
+//     // start the map in South-East England
+//     map.setView(new L.LatLng(44.4, -89.7),7);
+//     map.addLayer(osm);
+    
 
+//             var polygon = L.polygon([
+//     [43.1, -89.5],
+//     [43.0, -89.5],
+//     [43.1, -90]
+// ]).addTo(map);
 
+//             var popup = L.popup()
+// //     .setLatLng([51.5, -0.09])
+// //     .setContent("I am a standalone popup.")
+// //     .openOn(map);
+// //     var popup = L.popup();
 
-            var polygon = L.polygon([
-    [43.1, -89.5],
-    [43.0, -89.5],
-    [43.1, -90]
-]).addTo(map);
+// function onMapClick(e) {
+//     popup
+//         .setLatLng(e.latlng)
+//         .setContent("You clicked the map at " + e.latlng.toString())
+//         .openOn(map);
+// }
 
-            var popup = L.popup()
-//     .setLatLng([51.5, -0.09])
-//     .setContent("I am a standalone popup.")
-//     .openOn(map);
-//     var popup = L.popup();
+// function onPolygonClick(e) {
+//     alert("test click");
+// }
 
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(map);
-}
+// map.on('click', onMapClick);
+// polygon.on('click', onPolygonClick);
 
-function onPolygonClick(e) {
-    alert("test click");
-}
-
-map.on('click', onMapClick);
-polygon.on('click', onPolygonClick);
+// setTimeout(function(){
+//     map.invalidateSize();
+//         },1);
 
         </script>
 </div> 
 
 
-    <div data-theme="a" data-role="footer">
+<!--     <div data-theme="a" data-role="footer">
         <h3>
             UW-Madison
         </h3>
-    </div>
+    </div> -->
 </div>
 
 <div id="data_entry" data-role="page" data-theme="a">
