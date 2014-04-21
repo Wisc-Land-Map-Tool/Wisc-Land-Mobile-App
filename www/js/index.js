@@ -117,9 +117,22 @@
 
                 login();
             });
+
+                $("#backToMap").click(function (e) {
+
+                    e.preventDefault;
+                    $(':mobile-pagecontainer').pagecontainer('change', '#tasksPage', {
+                        transition: 'slide',
+                        changeHash: false,
+                        reverse: true,
+                        showLoadMsg: true
+                    });
+                
+            });
+                
                 
 
-                $(document).on("pagecreate", "#tasksPage", function( event ){
+                $(document).on("pageshow", "#tasksPage", function( event ){
 
                 var user_id = localStorage.getItem('user_id');
                 var map = L.map('map');
@@ -261,7 +274,7 @@
         });
     }
 
-    console.log("test");
+    console.log(polygons);
     var geojson = L.geoJson(polygons, {
         onEachFeature: onEachFeature
     }).addTo(map);
@@ -301,7 +314,7 @@
 
                 // });
 
-                $(document).on("pagecreate", "#data_entry", function( event ) {
+                $(document).on("pageshow", "#data_entry", function( event ) {
                     $("#selectCoverType2_div").hide();
                     $("#selectCoverType3_div").hide();
                     $("#forestSpecies_div").hide();
@@ -514,7 +527,19 @@
                             contentType: "application/json",
                             success: function(data){
 
+                                $("<div class='ui-loader ui-overlay-shadow ui-body-e ui-corner-all'><h1>Success</h1></div>").css({ "display": "block", "opacity": 0.96, "top": $(window).scrollTop() + 100 })
+                                      .appendTo( $.mobile.pageContainer )
+                                      .delay( 1500 )
+                                      .fadeOut( 400, function(){
+                                        $(this).remove();
+                                      });
 
+                                 $(':mobile-pagecontainer').pagecontainer('change', '#tasksPage', {
+                        transition: 'slide',
+                        changeHash: false,
+                        reverse: true,
+                        showLoadMsg: true
+                    });
                             },
                             
                             error: function(error) {
