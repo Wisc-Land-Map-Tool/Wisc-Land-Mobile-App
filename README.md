@@ -16,7 +16,6 @@ http://cordova.apache.org/docs/en/3.4.0/guide_cli_index.md.html#The%20Command-Li
 The linked site also includes guides for getting started and what dependencies are needed.
 
 
-
 Clone the repository to your local machine with the following command:
 
 git clone https://github.com/Wisc-Land-Map-Tool/Wisc-Land-Mobile-App
@@ -41,6 +40,20 @@ https://github.com/Wisc-Land-Map-Tool/Wisc-Land-Web-App
 must be running simultaneously to respond to the client calls of this application.
 
 If running in the browser, security must be disabled by using --disable-web-security in the url box (Chrome) for making cross origin AJAX calls in our application.
+
+# Use of application
+
+The workflow for entering data is as follows:
+
+Log in using your credentials
+
+A map should show up with your assigned points, you can browse the map.
+
+Once a polygon is clicked, a data entry form will show up.
+
+Enter data using the data entry points.  Tree specific fields should only show up when the land type is forest, or wetland->forested wetland.
+
+After clicking submit, you should return to the map.
 
 
 # Running tests
