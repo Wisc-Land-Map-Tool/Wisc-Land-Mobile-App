@@ -4,10 +4,12 @@
         <meta charset="utf-8" />
             <meta name="format-detection" content="telephone=no" />
             <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-            <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+            <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, width=device-width" />
             <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css"/>
             <link rel="stylesheet" href="css/custom.css">
             <link rel="stylesheet" href="css/index.css">
+            <link rel="stylesheet" href="css/land_proj_3.css">
+            <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
             <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
             <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
             <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
@@ -135,7 +137,7 @@
             <h3>
                 Task Data Entry
             </h3>
-            <form action="index.html" method="POST">
+            <form action="index.html" method="POST" id="data_form">
                 <div data-role="fieldcontain" data-controltype="selectmenu">
                     <label for="selectCoverType">
                         Cover Type
@@ -178,26 +180,26 @@
                     <select id="selectCoverType3" name="coverType3">
                     </select>
                 </div>
-                <div id="forestSpecies_div"data-role="fieldcontain" data-controltype="selectmenu">
+                <div id="forestSpecies_div">
                     <label for="selectForestSpecies">
                         Forest Species
                     </label>
-                    <div class="ui-grid-b" id="forestSpecies_grid">
-                      <div class="ui-block-a">
+                    <div id="forestSpecies_grid">
+                      <div class="ui-block-a" style="width:70%">
                         <select id="selectForestSpecies" name="forestSpecies">
                             <option value="">
                                  Select One
                             </option>
                         </select>
                       </div>
-                      <div class="ui-block-b">
+                      <div class="ui-block-b" style="width:20%">
                         <input type="number" name="speciesPer"  id="speciesPercentage" value="">
                       </div>
-                      <div class="ui-block-c">
+                      <div class="ui-block-c" style="width:10%">
                         <button data-role="button" id="newSpeciesEntry" data-icon="plus" data-iconpos="notext"></button>
                       </div>
                     </div>
-                    <fieldset>
+                    <fieldset style="width:100%">
                         <legend>Are trees at mature height?</legend>
                         <input type="radio" id="radio-choice-1" value="yes" name="treesAreMatureHeight">
                         <label for="radio-choice-1">Yes</label>
@@ -275,7 +277,6 @@
                         <textarea name="additionalComments" id="textarea-canopy"></textarea>
                 </div>
                 <div>
-                    <input type="button" value="Cancel"/>
                     <!-- <input type="button" value="Submit" form="classification" onclick="convertFormToJSON()"/> -->
                     <input type="submit" value="Submit"/>
                   
