@@ -29,11 +29,6 @@ test("Canopy Percentage",function(){
 	canopyPercentage();
 	equal(canopyPer,0);
 
-	// Fix jquery method problem with qunit
-	// $('#selectForestSpecies').val("Tree Type");
- 	// $('#speciesPercentage').val("90");
- 	// equal(canopyPer,90);
-
 
 });
 

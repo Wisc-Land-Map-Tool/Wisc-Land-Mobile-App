@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8" />
             <meta name="format-detection" content="telephone=no" />
-            <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
             <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, width=device-width" />
             <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css"/>
             <link rel="stylesheet" href="css/custom.css">
@@ -27,7 +26,7 @@
 
         <div data-role="content" data-theme="a">    
 
-            <form id="loginForm" data-theme="a">
+          <form id="loginForm" data-theme="a">
             <div data-role="fieldcontain" class="ui-hide-label" data-theme="a">
                 <label for="email">Email:</label>
                 <input type="text" name="email" id="email" value="" placeholder="Email" />
@@ -39,7 +38,7 @@
             </div>
 
             
-            </form>
+          </form>
             <button data-role="button" id="loginBtn" data-theme="a">Login</button>
         </div>
 
@@ -48,78 +47,18 @@
                 UW-Madison
             </h3>
         </div>
-    <!-- <script language="javascript" type="text/javascript" src="js/index.js"></script> -->
 
     </div>
 
     <div id="tasksPage" data-role="page" data-theme="a">
             <div data-theme="a" data-role="header" id="header">
                     <strong id="WINGS">Wisconsin Mapping Tool</strong>
-         </div>
+            </div>
 
 
-    <div data-role="content" data-theme="a">    
-    <!--         <ul data-role="listview" data-divider-theme="a" data-inset="false">
-                <li data-role="list-divider" role="heading">
-                    Current Tasks
-                </li>
-                <li data-theme="a">
-                    <button data-role="button" id="btnData_Entry" data-theme="a">Task 1</button>
-                </li>
-            </ul> -->
-            <div id="map"></div>
-            <script>
-                
-    //             var map = L.map('map');
-                
-    //             var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-    //     var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-    //     var osm = new L.TileLayer(osmUrl, {minZoom: 2, maxZoom: 20, attribution: osmAttrib}).addTo(map);       
-
-    //     // start the map in South-East England
-    //     map.setView(new L.LatLng(44.4, -89.7),7);
-    //     map.addLayer(osm);
-        
-
-    //             var polygon = L.polygon([
-    //     [43.1, -89.5],
-    //     [43.0, -89.5],
-    //     [43.1, -90]
-    // ]).addTo(map);
-
-    //             var popup = L.popup()
-    // //     .setLatLng([51.5, -0.09])
-    // //     .setContent("I am a standalone popup.")
-    // //     .openOn(map);
-    // //     var popup = L.popup();
-
-    // function onMapClick(e) {
-    //     popup
-    //         .setLatLng(e.latlng)
-    //         .setContent("You clicked the map at " + e.latlng.toString())
-    //         .openOn(map);
-    // }
-
-    // function onPolygonClick(e) {
-    //     alert("test click");
-    // }
-
-    // map.on('click', onMapClick);
-    // polygon.on('click', onPolygonClick);
-
-    // setTimeout(function(){
-    //     map.invalidateSize();
-    //         },1);
-
-            </script>
-    </div> 
-
-
-    <!--     <div data-theme="a" data-role="footer">
-            <h3>
-                UW-Madison
-            </h3>
-        </div> -->
+            <div data-role="content" data-theme="a">    
+                    <div id="map"></div>
+            </div> 
     </div>
 
     <div id="data_entry" data-role="page" data-theme="a">
@@ -277,9 +216,7 @@
                         <textarea name="additionalComments" id="textarea-canopy"></textarea>
                 </div>
                 <div>
-                    <!-- <input type="button" value="Submit" form="classification" onclick="convertFormToJSON()"/> -->
                     <input type="submit" value="Submit"/>
-                  
                 </div>
             </form>
         </div>
@@ -290,7 +227,6 @@
         </div>
     </div>
             <script src="js/index.js"></script>
-
     </body>
 
     </html>
